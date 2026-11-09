@@ -1,0 +1,20 @@
+{
+  "name": "tirta-worker",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build:page": "cd ../web && npm ci && npm run build",
+    "dev": "npm run build:page && wrangler dev",
+    "deploy": "npm run build:page && wrangler deploy",
+    "typecheck": "tsc --noEmit",
+    "test": "node --experimental-strip-types --no-warnings --test test/*.test.ts"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "1.3.0"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "5.20261025.1",
+    "typescript": "7.0.2",
+    "wrangler": "4.152.0"
+  }
+}

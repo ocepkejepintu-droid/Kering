@@ -1,0 +1,161 @@
+{
+ "area": "uluwatu",
+ "method": "Claude looked at the building's crop in every sharp capture",
+ "labels": [
+  {
+   "index": 2050,
+   "first": "there_by",
+   "note": "grey roof cluster already in 2010"
+  },
+  {
+   "index": 508,
+   "first": "2023-08-22",
+   "note": "trees and ground to 2023-02, grey roof 2023-08"
+  },
+  {
+   "index": 1524,
+   "first": "there_by",
+   "note": "grey/white villa roofs already in 2010"
+  },
+  {
+   "index": 846,
+   "first": "2019-10-20",
+   "note": "field to 2018, orange roof 2019"
+  },
+  {
+   "index": 389,
+   "first": "2017-09-09",
+   "note": "older building cleared to bare ground 2015, new grey roof 2017"
+  },
+  {
+   "index": 1963,
+   "first": "there_by",
+   "note": "grey villa roofs already in 2010"
+  },
+  {
+   "index": 2324,
+   "first": "2017-09-09",
+   "note": "garden 2015, flat light-grey roof 2017"
+  },
+  {
+   "index": 284,
+   "first": "there_by",
+   "note": "amphitheatre structure already in 2010"
+  },
+  {
+   "index": 1646,
+   "first": "there_by",
+   "note": "white/grey roof already in 2010"
+  },
+  {
+   "index": 2101,
+   "first": "2015-09-15",
+   "note": "forest 2010, grey villa roofs 2015"
+  },
+  {
+   "index": 2387,
+   "first": "there_by",
+   "note": "grey warung roofs already in 2010"
+  },
+  {
+   "index": 1136,
+   "first": "2019-10-20",
+   "note": "bush to 2018, orange roof 2019"
+  },
+  {
+   "index": 2207,
+   "first": "2017-09-09",
+   "note": "forest 2010, cleared 2015, light roof 2017"
+  },
+  {
+   "index": 1633,
+   "first": "2019-10-20",
+   "note": "vegetation and ground to 2017, brown roof 2019"
+  },
+  {
+   "index": 1425,
+   "first": "2023-02-22",
+   "note": "yard to 2022, grey-white roof 2023"
+  },
+  {
+   "index": 2247,
+   "first": "2020-05-26",
+   "note": "forest to 2017, construction 2019, dark roof 2020"
+  },
+  {
+   "index": 1960,
+   "first": "there_by",
+   "note": "dark roof square already in 2010"
+  },
+  {
+   "index": 1688,
+   "first": "2019-10-20",
+   "note": "bush to 2018, red roof 2019"
+  },
+  {
+   "index": 934,
+   "first": "2017-09-09",
+   "note": "field 2015, grey roof 2017"
+  },
+  {
+   "index": 1742,
+   "first": "2019-10-20",
+   "note": "bush to 2018, dark roof in new compound 2019"
+  },
+  {
+   "index": 1858,
+   "first": "2024-06-12",
+   "note": "field to 2023, orange roof row 2024"
+  },
+  {
+   "index": 1859,
+   "first": "2024-06-12",
+   "note": "field to 2023, orange roof row 2024"
+  },
+  {
+   "index": 1844,
+   "first": "2024-06-12",
+   "note": "field to 2023, orange roof row 2024"
+  },
+  {
+   "index": 795,
+   "first": "2022-03-24",
+   "note": "grass beside house to 2020, white roof 2022"
+  },
+  {
+   "index": 1235,
+   "first": "2023-02-22",
+   "note": "field to 2022, orange bungalow roof 2023"
+  },
+  {
+   "index": 1909,
+   "first": "2022-03-24",
+   "note": "trees and ground to 2019, small grey roof 2022"
+  },
+  {
+   "index": 277,
+   "first": "none",
+   "note": "sea and cliff face in every capture"
+  },
+  {
+   "index": 33,
+   "first": "2022-03-24",
+   "note": "trees to 2020, small grey roof 2022"
+  },
+  {
+   "index": 2413,
+   "first": "2015-09-15",
+   "note": "grass 2010, dark bungalow roof 2015"
+  },
+  {
+   "index": 1658,
+   "first": "2019-10-20",
+   "note": "field to 2017, small grey roof beside new house 2019"
+  },
+  {
+   "index": 1874,
+   "first": "2024-06-12",
+   "note": "grass beside house to 2023, orange roof 2024"
+  }
+ ]
+}

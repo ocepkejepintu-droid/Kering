@@ -1,0 +1,46 @@
+{
+ "area": "pererenan",
+ "method": "Claude looked at the building's crop in every sharp capture",
+ "labels": [
+  {
+   "index": 9077,
+   "first": "there_by",
+   "note": "grey roof in outline from 2014 (2010 cloud); rebuilt with white roof 2024"
+  },
+  {
+   "index": 15895,
+   "first": "2022-03-24",
+   "note": "vegetation through 2020-05, grey roof 2022"
+  },
+  {
+   "index": 4372,
+   "first": "2022-03-24",
+   "note": "ground/foundation 2021-11, grey roof 2022"
+  },
+  {
+   "index": 16881,
+   "first": "2019-11-07",
+   "note": "field 2014, pale roof 2019, grey roof 2021-22"
+  },
+  {
+   "index": 16873,
+   "first": "2023-02-22",
+   "note": "bare ground in sharp 2022-03, blue roof 2023"
+  },
+  {
+   "index": 293,
+   "first": "2021-11-23",
+   "note": "field 2014, no roof in 2021-06, orange roof from 2021-11"
+  },
+  {
+   "index": 2836,
+   "first": "2019-11-07",
+   "note": "field 2014, dark roof from 2019"
+  },
+  {
+   "index": 3293,
+   "first": "none",
+   "note": "grass/field or bare soil in every capture incl. sharp 2022-2025"
+  }
+ ]
+}

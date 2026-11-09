@@ -1,0 +1,49 @@
+{
+  "version": 1,
+  "origin": {
+    "base_url": "https://api.anthropic.com",
+    "organization_id": "ec3a770b-b1d6-4eb5-a02c-9575d129d9e4",
+    "workspace_id": "wrkspc_01W2pchfEkC5xykidNT4cB1o"
+  },
+  "resources": {
+    "./agents/kering-analyst/agent.md": {
+      "kind": "agent",
+      "id": "agent_01DjRgC3wCvXs2LFppzZQcCn",
+      "version": "3",
+      "hash": "f2f3a358a66feb3a900cfda4daa00246",
+      "remote_hash": "dfc14f34ac4d0848bc2f1b95d3f932dd",
+      "stamp": "3"
+    },
+    "./agents/kering-ask/agent.md": {
+      "kind": "agent",
+      "id": "agent_01ST7zBWfQMfqHdg64fPGhHm",
+      "version": "1",
+      "hash": "eecc776268bb87275d6d964e027ff2c1",
+      "remote_hash": "f7166c6158a693ee5b7f9e2a79367a48",
+      "stamp": "1"
+    },
+    "./agents/kering-banjar-pack/agent.md": {
+      "kind": "agent",
+      "id": "agent_01CNeGKAuYhXams68q8TQ7DS",
+      "version": "3",
+      "hash": "f21b966fcfe172f2c68c4b3f3f0f45d1",
+      "remote_hash": "e9c25a0580d3565ad983211be3beb261",
+      "stamp": "3"
+    },
+    "./agents/kering-rain-refresh/agent.md": {
+      "kind": "agent",
+      "id": "agent_01Ri9aZdNknPzBQNNqboLev6",
+      "version": "3",
+      "hash": "fb8207942cb84d00047f68678cc4f8c5",
+      "remote_hash": "59a037a2367f1af635f7f8d1bd8b3f2b",
+      "stamp": "3"
+    },
+    "./agents/vps/environment.yaml": {
+      "kind": "environment",
+      "id": "env_0182MPqjJZkKFQeSTBrpDFUi",
+      "hash": "eaca65f46046f3eb284b30c2e6fd597e",
+      "remote_hash": "12f39b7f03b6e6576b74744a6b1293d8",
+      "stamp": "2026-11-09T07:48:49.555287Z"
+    }
+  }
+}

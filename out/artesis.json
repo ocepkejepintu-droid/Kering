@@ -1,0 +1,5037 @@
+{
+"meta": {
+"generated": "2026-11-09",
+"sources": [
+"https://geologi.esdm.go.id/artesis/api/map/get-arena-pag-bkat-neraca",
+"https://geologi.esdm.go.id/artesis/tiles/kbak.pmtiles",
+"https://geologi.esdm.go.id/artesis (map UI; KBAK per Permen ESDM 17/2012, DATSTR 2017)"
+],
+"files": {
+"sipa": {
+"file": "sipa_bali.geojson",
+"points": 3569,
+"afterDedupe": 3548,
+"unmatchedPoints": 3,
+"fields": "sipaCount = licensed wells inside the desa; sipaPerKm2; wellDepthMedianM = median permitted depth (kedalaman_sumur); debitSum = sum of debit_sipa_baru as served (unit not stated by the service)"
+},
+"kbak": {
+"file": "kbak_bali.geojson",
+"polygons": 23
+}
+}
+},
+"villages": {
+"0": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"1": {
+"sipaCount": 114,
+"sipaPerKm2": 5.02,
+"wellDepthMedianM": 60.0,
+"debitSum": 6158.0,
+"kbakShare": 0.119
+},
+"2": {
+"sipaCount": 42,
+"sipaPerKm2": 6.014,
+"wellDepthMedianM": 60.0,
+"debitSum": 841.0,
+"kbakShare": 0.0
+},
+"3": {
+"sipaCount": 13,
+"sipaPerKm2": 2.037,
+"wellDepthMedianM": 70.0,
+"debitSum": 315.0,
+"kbakShare": 0.0
+},
+"4": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"5": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"6": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"7": {
+"sipaCount": 3,
+"sipaPerKm2": 0.999,
+"wellDepthMedianM": 63.0,
+"debitSum": 18.0,
+"kbakShare": 0.0
+},
+"8": {
+"sipaCount": 2,
+"sipaPerKm2": 0.49,
+"wellDepthMedianM": 90.0,
+"debitSum": 163.0,
+"kbakShare": 0.0
+},
+"9": {
+"sipaCount": 1,
+"sipaPerKm2": 0.136,
+"wellDepthMedianM": 49.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"10": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"11": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.21
+},
+"12": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"13": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"14": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"15": {
+"sipaCount": 2,
+"sipaPerKm2": 0.3,
+"wellDepthMedianM": 120.0,
+"debitSum": 80.0,
+"kbakShare": 0.0
+},
+"16": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"17": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"18": {
+"sipaCount": 1,
+"sipaPerKm2": 0.115,
+"wellDepthMedianM": 150.0,
+"debitSum": 691.0,
+"kbakShare": 0.0
+},
+"19": {
+"sipaCount": 11,
+"sipaPerKm2": 0.294,
+"wellDepthMedianM": 15.0,
+"debitSum": 91.0,
+"kbakShare": 0.0
+},
+"20": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"21": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"22": {
+"sipaCount": 95,
+"sipaPerKm2": 3.65,
+"wellDepthMedianM": 42.0,
+"debitSum": 2246.0,
+"kbakShare": 0.0
+},
+"23": {
+"sipaCount": 1,
+"sipaPerKm2": 0.216,
+"wellDepthMedianM": 77.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"24": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"25": {
+"sipaCount": 3,
+"sipaPerKm2": 1.416,
+"wellDepthMedianM": 60.0,
+"debitSum": 50.0,
+"kbakShare": 0.0
+},
+"26": {
+"sipaCount": 1,
+"sipaPerKm2": 0.316,
+"wellDepthMedianM": 50.0,
+"debitSum": 2.0,
+"kbakShare": 0.0
+},
+"27": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"28": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"29": {
+"sipaCount": 5,
+"sipaPerKm2": 1.212,
+"wellDepthMedianM": 50.0,
+"debitSum": 63.0,
+"kbakShare": 0.0
+},
+"30": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"31": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"32": {
+"sipaCount": 1,
+"sipaPerKm2": 0.135,
+"wellDepthMedianM": 50.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"33": {
+"sipaCount": 8,
+"sipaPerKm2": 1.249,
+"wellDepthMedianM": 37.5,
+"debitSum": 69.0,
+"kbakShare": 0.0
+},
+"34": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"35": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"36": {
+"sipaCount": 1,
+"sipaPerKm2": 0.288,
+"wellDepthMedianM": 65.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"37": {
+"sipaCount": 2,
+"sipaPerKm2": 0.298,
+"wellDepthMedianM": 7.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"38": {
+"sipaCount": 6,
+"sipaPerKm2": 0.411,
+"wellDepthMedianM": 92.5,
+"debitSum": 85.0,
+"kbakShare": 0.0
+},
+"39": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"40": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"41": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"42": {
+"sipaCount": 2,
+"sipaPerKm2": 5.709,
+"wellDepthMedianM": 103.5,
+"debitSum": 21.0,
+"kbakShare": 0.0
+},
+"43": {
+"sipaCount": 18,
+"sipaPerKm2": 2.315,
+"wellDepthMedianM": 60.0,
+"debitSum": 542.0,
+"kbakShare": 0.0
+},
+"44": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"45": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"46": {
+"sipaCount": 22,
+"sipaPerKm2": 5.18,
+"wellDepthMedianM": 35.0,
+"debitSum": 480.0,
+"kbakShare": 0.0
+},
+"47": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"48": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"49": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"50": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"51": {
+"sipaCount": 1,
+"sipaPerKm2": 1.981,
+"wellDepthMedianM": 40.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"52": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"53": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"54": {
+"sipaCount": 1,
+"sipaPerKm2": 0.363,
+"wellDepthMedianM": 60.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"55": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"56": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"57": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"58": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"59": {
+"sipaCount": 2,
+"sipaPerKm2": 0.25,
+"wellDepthMedianM": 46.5,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"60": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"61": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"62": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"63": {
+"sipaCount": 14,
+"sipaPerKm2": 2.105,
+"wellDepthMedianM": 60.0,
+"debitSum": 114.0,
+"kbakShare": 0.0
+},
+"64": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"65": {
+"sipaCount": 2,
+"sipaPerKm2": 1.104,
+"wellDepthMedianM": 70.0,
+"debitSum": 15.0,
+"kbakShare": 0.0
+},
+"66": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"67": {
+"sipaCount": 60,
+"sipaPerKm2": 13.542,
+"wellDepthMedianM": 55.0,
+"debitSum": 633.0,
+"kbakShare": 0.0
+},
+"68": {
+"sipaCount": 1,
+"sipaPerKm2": 0.396,
+"wellDepthMedianM": 120.0,
+"debitSum": 2.0,
+"kbakShare": 0.0
+},
+"69": {
+"sipaCount": 3,
+"sipaPerKm2": 2.627,
+"wellDepthMedianM": 50.0,
+"debitSum": 29.0,
+"kbakShare": 0.0
+},
+"70": {
+"sipaCount": 2,
+"sipaPerKm2": 1.921,
+"wellDepthMedianM": 70.0,
+"debitSum": 90.0,
+"kbakShare": 0.0
+},
+"71": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"72": {
+"sipaCount": 6,
+"sipaPerKm2": 4.423,
+"wellDepthMedianM": 50.0,
+"debitSum": 55.0,
+"kbakShare": 0.0
+},
+"73": {
+"sipaCount": 12,
+"sipaPerKm2": 3.557,
+"wellDepthMedianM": 50.0,
+"debitSum": 155.0,
+"kbakShare": 0.0
+},
+"74": {
+"sipaCount": 216,
+"sipaPerKm2": 27.772,
+"wellDepthMedianM": 50.0,
+"debitSum": 3888.0,
+"kbakShare": 0.0
+},
+"75": {
+"sipaCount": 3,
+"sipaPerKm2": 0.837,
+"wellDepthMedianM": 40.0,
+"debitSum": 210.0,
+"kbakShare": 0.0
+},
+"76": {
+"sipaCount": 21,
+"sipaPerKm2": 3.765,
+"wellDepthMedianM": 51.0,
+"debitSum": 246.0,
+"kbakShare": 0.0
+},
+"77": {
+"sipaCount": 5,
+"sipaPerKm2": 1.527,
+"wellDepthMedianM": 50.0,
+"debitSum": 35.0,
+"kbakShare": 0.0
+},
+"78": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"79": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"80": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"81": {
+"sipaCount": 9,
+"sipaPerKm2": 0.959,
+"wellDepthMedianM": 45.0,
+"debitSum": 236.0,
+"kbakShare": 0.0
+},
+"82": {
+"sipaCount": 188,
+"sipaPerKm2": 33.373,
+"wellDepthMedianM": 60.0,
+"debitSum": 2321.0,
+"kbakShare": 0.0
+},
+"83": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"84": {
+"sipaCount": 18,
+"sipaPerKm2": 3.035,
+"wellDepthMedianM": 30.0,
+"debitSum": 425.0,
+"kbakShare": 0.352
+},
+"85": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"86": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"87": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"88": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"89": {
+"sipaCount": 1,
+"sipaPerKm2": 0.043,
+"wellDepthMedianM": 100.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"90": {
+"sipaCount": 4,
+"sipaPerKm2": 0.874,
+"wellDepthMedianM": 55.0,
+"debitSum": 33.0,
+"kbakShare": 0.0
+},
+"91": {
+"sipaCount": 2,
+"sipaPerKm2": 0.118,
+"wellDepthMedianM": 60.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"92": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"93": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"94": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"95": {
+"sipaCount": 1,
+"sipaPerKm2": 0.059,
+"wellDepthMedianM": 75.0,
+"debitSum": 25.0,
+"kbakShare": 0.0
+},
+"96": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"97": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"98": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"99": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"100": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"101": {
+"sipaCount": 3,
+"sipaPerKm2": 1.75,
+"wellDepthMedianM": 70.0,
+"debitSum": 108.0,
+"kbakShare": 0.0
+},
+"102": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"103": {
+"sipaCount": 45,
+"sipaPerKm2": 9.466,
+"wellDepthMedianM": 50.0,
+"debitSum": 999.0,
+"kbakShare": 0.0
+},
+"104": {
+"sipaCount": 1,
+"sipaPerKm2": 0.318,
+"wellDepthMedianM": 50.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"105": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"106": {
+"sipaCount": 1,
+"sipaPerKm2": 0.117,
+"wellDepthMedianM": 40.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"107": {
+"sipaCount": 5,
+"sipaPerKm2": 2.616,
+"wellDepthMedianM": 30.0,
+"debitSum": 40.0,
+"kbakShare": 0.0
+},
+"108": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"109": {
+"sipaCount": 2,
+"sipaPerKm2": 0.385,
+"wellDepthMedianM": 112.5,
+"debitSum": 30.0,
+"kbakShare": 0.0
+},
+"110": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"111": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"112": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"113": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"114": {
+"sipaCount": 3,
+"sipaPerKm2": 0.359,
+"wellDepthMedianM": 70.0,
+"debitSum": 30.0,
+"kbakShare": 0.0
+},
+"115": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"116": {
+"sipaCount": 154,
+"sipaPerKm2": 23.328,
+"wellDepthMedianM": 52.0,
+"debitSum": 3160.0,
+"kbakShare": 0.0
+},
+"117": {
+"sipaCount": 1,
+"sipaPerKm2": 0.202,
+"wellDepthMedianM": 40.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"118": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"119": {
+"sipaCount": 1,
+"sipaPerKm2": 0.231,
+"wellDepthMedianM": 70.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"120": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"121": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"122": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"123": {
+"sipaCount": 1,
+"sipaPerKm2": 0.129,
+"wellDepthMedianM": 80.0,
+"debitSum": 11.0,
+"kbakShare": 0.0
+},
+"124": {
+"sipaCount": 10,
+"sipaPerKm2": 2.497,
+"wellDepthMedianM": 50.0,
+"debitSum": 43.0,
+"kbakShare": 0.0
+},
+"125": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"126": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"127": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"128": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"129": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"130": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"131": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"132": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"133": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"134": {
+"sipaCount": 9,
+"sipaPerKm2": 0.532,
+"wellDepthMedianM": 6.0,
+"debitSum": 120.0,
+"kbakShare": 0.0
+},
+"135": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"136": {
+"sipaCount": 2,
+"sipaPerKm2": 0.13,
+"wellDepthMedianM": 9.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"137": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"138": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"139": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"140": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"141": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"142": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"143": {
+"sipaCount": 5,
+"sipaPerKm2": 0.578,
+"wellDepthMedianM": 64.0,
+"debitSum": 124.0,
+"kbakShare": 0.0
+},
+"144": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"145": {
+"sipaCount": 1,
+"sipaPerKm2": 0.466,
+"wellDepthMedianM": 30.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"146": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"147": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"148": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"149": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"150": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"151": {
+"sipaCount": 2,
+"sipaPerKm2": 0.431,
+"wellDepthMedianM": 40.0,
+"debitSum": 8.0,
+"kbakShare": 0.0
+},
+"152": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"153": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"154": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"155": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"156": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"157": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"158": {
+"sipaCount": 11,
+"sipaPerKm2": 0.71,
+"wellDepthMedianM": 150.0,
+"debitSum": 820.0,
+"kbakShare": 0.0
+},
+"159": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"160": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"161": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"162": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"163": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"164": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"165": {
+"sipaCount": 7,
+"sipaPerKm2": 3.116,
+"wellDepthMedianM": 50.0,
+"debitSum": 55.0,
+"kbakShare": 0.0
+},
+"166": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"167": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"168": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"169": {
+"sipaCount": 13,
+"sipaPerKm2": 2.299,
+"wellDepthMedianM": 50.0,
+"debitSum": 98.0,
+"kbakShare": 0.0
+},
+"170": {
+"sipaCount": 2,
+"sipaPerKm2": 0.272,
+"wellDepthMedianM": 87.0,
+"debitSum": 440.0,
+"kbakShare": 0.0
+},
+"171": {
+"sipaCount": 1,
+"sipaPerKm2": 0.206,
+"wellDepthMedianM": 100.0,
+"debitSum": 60.0,
+"kbakShare": 0.0
+},
+"172": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"173": {
+"sipaCount": 9,
+"sipaPerKm2": 4.861,
+"wellDepthMedianM": 60.0,
+"debitSum": 106.0,
+"kbakShare": 0.0
+},
+"174": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"175": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"176": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"177": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"178": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"179": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"180": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"181": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"182": {
+"sipaCount": 2,
+"sipaPerKm2": 0.51,
+"wellDepthMedianM": 85.0,
+"debitSum": 510.0,
+"kbakShare": 0.0
+},
+"183": {
+"sipaCount": 5,
+"sipaPerKm2": 1.79,
+"wellDepthMedianM": 120.0,
+"debitSum": 1934.0,
+"kbakShare": 0.0
+},
+"184": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"185": {
+"sipaCount": 2,
+"sipaPerKm2": 0.032,
+"wellDepthMedianM": 83.0,
+"debitSum": 120.0,
+"kbakShare": 0.0
+},
+"186": {
+"sipaCount": 3,
+"sipaPerKm2": 1.353,
+"wellDepthMedianM": 23.0,
+"debitSum": 24.0,
+"kbakShare": 0.0
+},
+"187": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"188": {
+"sipaCount": 9,
+"sipaPerKm2": 0.313,
+"wellDepthMedianM": 12.5,
+"debitSum": 102.0,
+"kbakShare": 0.0
+},
+"189": {
+"sipaCount": 3,
+"sipaPerKm2": 0.525,
+"wellDepthMedianM": 35.0,
+"debitSum": 30.0,
+"kbakShare": 0.0
+},
+"190": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"191": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"192": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"193": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"194": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"195": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"196": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"197": {
+"sipaCount": 1,
+"sipaPerKm2": 0.104,
+"wellDepthMedianM": 4.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"198": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"199": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"200": {
+"sipaCount": 29,
+"sipaPerKm2": 10.573,
+"wellDepthMedianM": 60.0,
+"debitSum": 297.3,
+"kbakShare": 0.0
+},
+"201": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"202": {
+"sipaCount": 3,
+"sipaPerKm2": 0.597,
+"wellDepthMedianM": 60.0,
+"debitSum": 30.0,
+"kbakShare": 0.0
+},
+"203": {
+"sipaCount": 3,
+"sipaPerKm2": 0.728,
+"wellDepthMedianM": 80.0,
+"debitSum": 115.0,
+"kbakShare": 0.0
+},
+"204": {
+"sipaCount": 6,
+"sipaPerKm2": 2.461,
+"wellDepthMedianM": 49.0,
+"debitSum": 1267.0,
+"kbakShare": 0.0
+},
+"205": {
+"sipaCount": 5,
+"sipaPerKm2": 1.242,
+"wellDepthMedianM": 60.0,
+"debitSum": 61.0,
+"kbakShare": 0.0
+},
+"206": {
+"sipaCount": 9,
+"sipaPerKm2": 2.407,
+"wellDepthMedianM": 52.0,
+"debitSum": 116.0,
+"kbakShare": 0.0
+},
+"207": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"208": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"209": {
+"sipaCount": 20,
+"sipaPerKm2": 2.529,
+"wellDepthMedianM": 50.0,
+"debitSum": 3201.0,
+"kbakShare": 0.0
+},
+"210": {
+"sipaCount": 1,
+"sipaPerKm2": 0.234,
+"wellDepthMedianM": 118.0,
+"debitSum": 700.0,
+"kbakShare": 0.0
+},
+"211": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"212": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"213": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"214": {
+"sipaCount": 1,
+"sipaPerKm2": 0.079,
+"wellDepthMedianM": 190.0,
+"debitSum": 75.0,
+"kbakShare": 0.0
+},
+"215": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"216": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"217": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"218": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"219": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"220": {
+"sipaCount": 2,
+"sipaPerKm2": 0.292,
+"wellDepthMedianM": 88.0,
+"debitSum": 105.0,
+"kbakShare": 0.0
+},
+"221": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"222": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"223": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"224": {
+"sipaCount": 3,
+"sipaPerKm2": 0.702,
+"wellDepthMedianM": 84.0,
+"debitSum": 678.0,
+"kbakShare": 0.0
+},
+"225": {
+"sipaCount": 1,
+"sipaPerKm2": 0.428,
+"wellDepthMedianM": 110.0,
+"debitSum": 1.0,
+"kbakShare": 0.0
+},
+"226": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"227": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"228": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"229": {
+"sipaCount": 6,
+"sipaPerKm2": 1.538,
+"wellDepthMedianM": 50.0,
+"debitSum": 47.0,
+"kbakShare": 0.0
+},
+"230": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"231": {
+"sipaCount": 9,
+"sipaPerKm2": 2.736,
+"wellDepthMedianM": 50.0,
+"debitSum": 108.0,
+"kbakShare": 0.0
+},
+"232": {
+"sipaCount": 6,
+"sipaPerKm2": 7.932,
+"wellDepthMedianM": 60.0,
+"debitSum": 242.0,
+"kbakShare": 0.0
+},
+"233": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"234": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"235": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"236": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"237": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"238": {
+"sipaCount": 2,
+"sipaPerKm2": 1.738,
+"wellDepthMedianM": 60.0,
+"debitSum": 15.0,
+"kbakShare": 0.0
+},
+"239": {
+"sipaCount": 2,
+"sipaPerKm2": 5.491,
+"wellDepthMedianM": 6.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"240": {
+"sipaCount": 1,
+"sipaPerKm2": 1.633,
+"wellDepthMedianM": 20.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"241": {
+"sipaCount": 41,
+"sipaPerKm2": 7.422,
+"wellDepthMedianM": 70.0,
+"debitSum": 887.0,
+"kbakShare": 0.0
+},
+"242": {
+"sipaCount": 1,
+"sipaPerKm2": 0.251,
+"wellDepthMedianM": 120.0,
+"debitSum": 135.0,
+"kbakShare": 0.0
+},
+"243": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"244": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"245": {
+"sipaCount": 126,
+"sipaPerKm2": 16.171,
+"wellDepthMedianM": 35.0,
+"debitSum": 1407.0,
+"kbakShare": 0.0
+},
+"246": {
+"sipaCount": 1,
+"sipaPerKm2": 0.084,
+"wellDepthMedianM": 45.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"247": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"248": {
+"sipaCount": 2,
+"sipaPerKm2": 0.75,
+"wellDepthMedianM": 42.0,
+"debitSum": 60.0,
+"kbakShare": 0.0
+},
+"249": {
+"sipaCount": 105,
+"sipaPerKm2": 34.319,
+"wellDepthMedianM": 45.0,
+"debitSum": 1548.0,
+"kbakShare": 0.0
+},
+"250": {
+"sipaCount": 3,
+"sipaPerKm2": 0.425,
+"wellDepthMedianM": 16.0,
+"debitSum": 30.0,
+"kbakShare": 0.0
+},
+"251": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"252": {
+"sipaCount": 1,
+"sipaPerKm2": 0.352,
+"wellDepthMedianM": 52.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"253": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"254": {
+"sipaCount": 4,
+"sipaPerKm2": 0.409,
+"wellDepthMedianM": 132.0,
+"debitSum": 120.0,
+"kbakShare": 0.0
+},
+"255": {
+"sipaCount": 4,
+"sipaPerKm2": 1.052,
+"wellDepthMedianM": 45.0,
+"debitSum": 40.0,
+"kbakShare": 0.0
+},
+"256": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"257": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"258": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"259": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"260": {
+"sipaCount": 4,
+"sipaPerKm2": 2.037,
+"wellDepthMedianM": 55.0,
+"debitSum": 623.0,
+"kbakShare": 0.0
+},
+"261": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"262": {
+"sipaCount": 1,
+"sipaPerKm2": 0.278,
+"wellDepthMedianM": 76.0,
+"debitSum": 2.0,
+"kbakShare": 0.0
+},
+"263": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"264": {
+"sipaCount": 1,
+"sipaPerKm2": 0.09,
+"wellDepthMedianM": 10.0,
+"debitSum": 3.0,
+"kbakShare": 0.0
+},
+"265": {
+"sipaCount": 2,
+"sipaPerKm2": 0.868,
+"wellDepthMedianM": 105.0,
+"debitSum": 6.0,
+"kbakShare": 0.0
+},
+"266": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"267": {
+"sipaCount": 7,
+"sipaPerKm2": 4.613,
+"wellDepthMedianM": 60.0,
+"debitSum": 168.0,
+"kbakShare": 0.0
+},
+"268": {
+"sipaCount": 15,
+"sipaPerKm2": 9.586,
+"wellDepthMedianM": 60.0,
+"debitSum": 247.0,
+"kbakShare": 0.0
+},
+"269": {
+"sipaCount": 2,
+"sipaPerKm2": 0.122,
+"wellDepthMedianM": 60.0,
+"debitSum": 28.0,
+"kbakShare": 0.0
+},
+"270": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"271": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"272": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"273": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"274": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"275": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"276": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"277": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"278": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"279": {
+"sipaCount": 6,
+"sipaPerKm2": 0.874,
+"wellDepthMedianM": 60.0,
+"debitSum": 178.0,
+"kbakShare": 0.0
+},
+"280": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"281": {
+"sipaCount": 6,
+"sipaPerKm2": 2.64,
+"wellDepthMedianM": 24.0,
+"debitSum": 43.0,
+"kbakShare": 0.0
+},
+"282": {
+"sipaCount": 1,
+"sipaPerKm2": 0.235,
+"wellDepthMedianM": 50.0,
+"debitSum": 3.0,
+"kbakShare": 0.0
+},
+"283": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"284": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"285": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"286": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"287": {
+"sipaCount": 1,
+"sipaPerKm2": 4.531,
+"wellDepthMedianM": 40.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"288": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"289": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"290": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"291": {
+"sipaCount": 1,
+"sipaPerKm2": 0.354,
+"wellDepthMedianM": 60.0,
+"debitSum": 3.0,
+"kbakShare": 0.0
+},
+"292": {
+"sipaCount": 11,
+"sipaPerKm2": 1.725,
+"wellDepthMedianM": 50.0,
+"debitSum": 112.0,
+"kbakShare": 0.312
+},
+"293": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"294": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"295": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"296": {
+"sipaCount": 10,
+"sipaPerKm2": 2.982,
+"wellDepthMedianM": 60.0,
+"debitSum": 178.0,
+"kbakShare": 0.0
+},
+"297": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"298": {
+"sipaCount": 8,
+"sipaPerKm2": 1.137,
+"wellDepthMedianM": 62.5,
+"debitSum": 248.0,
+"kbakShare": 0.0
+},
+"299": {
+"sipaCount": 1,
+"sipaPerKm2": 0.285,
+"wellDepthMedianM": 174.0,
+"debitSum": 164.0,
+"kbakShare": 0.0
+},
+"300": {
+"sipaCount": 1,
+"sipaPerKm2": 0.236,
+"wellDepthMedianM": 26.5,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"301": {
+"sipaCount": 4,
+"sipaPerKm2": 0.764,
+"wellDepthMedianM": 63.0,
+"debitSum": 175.0,
+"kbakShare": 0.0
+},
+"302": {
+"sipaCount": 11,
+"sipaPerKm2": 0.854,
+"wellDepthMedianM": 9.0,
+"debitSum": 103.0,
+"kbakShare": 0.0
+},
+"303": {
+"sipaCount": 2,
+"sipaPerKm2": 0.246,
+"wellDepthMedianM": 75.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"304": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"305": {
+"sipaCount": 1,
+"sipaPerKm2": 0.142,
+"wellDepthMedianM": 14.0,
+"debitSum": 3.0,
+"kbakShare": 0.0
+},
+"306": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"307": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"308": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"309": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"310": {
+"sipaCount": 5,
+"sipaPerKm2": 1.2,
+"wellDepthMedianM": 55.0,
+"debitSum": 79.0,
+"kbakShare": 0.0
+},
+"311": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"312": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"313": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"314": {
+"sipaCount": 6,
+"sipaPerKm2": 2.78,
+"wellDepthMedianM": 35.5,
+"debitSum": 38.0,
+"kbakShare": 0.0
+},
+"315": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"316": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"317": {
+"sipaCount": 2,
+"sipaPerKm2": 0.108,
+"wellDepthMedianM": 116.0,
+"debitSum": 50.0,
+"kbakShare": 0.0
+},
+"318": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"319": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"320": {
+"sipaCount": 1,
+"sipaPerKm2": 0.226,
+"wellDepthMedianM": 110.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"321": {
+"sipaCount": 1,
+"sipaPerKm2": 0.991,
+"wellDepthMedianM": 50.0,
+"debitSum": 8.0,
+"kbakShare": 0.63
+},
+"322": {
+"sipaCount": 1,
+"sipaPerKm2": 0.305,
+"wellDepthMedianM": 50.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"323": {
+"sipaCount": 18,
+"sipaPerKm2": 4.046,
+"wellDepthMedianM": 60.0,
+"debitSum": 348.0,
+"kbakShare": 0.0
+},
+"324": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"325": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"326": {
+"sipaCount": 2,
+"sipaPerKm2": 0.365,
+"wellDepthMedianM": 80.0,
+"debitSum": 12.0,
+"kbakShare": 0.0
+},
+"327": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"328": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"329": {
+"sipaCount": 13,
+"sipaPerKm2": 2.12,
+"wellDepthMedianM": 40.0,
+"debitSum": 165.0,
+"kbakShare": 0.0
+},
+"330": {
+"sipaCount": 36,
+"sipaPerKm2": 5.685,
+"wellDepthMedianM": 50.0,
+"debitSum": 1365.0,
+"kbakShare": 0.0
+},
+"331": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"332": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"333": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"334": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"335": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"336": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"337": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"338": {
+"sipaCount": 7,
+"sipaPerKm2": 3.481,
+"wellDepthMedianM": 68.0,
+"debitSum": 182.0,
+"kbakShare": 0.0
+},
+"339": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"340": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"341": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"342": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"343": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"344": {
+"sipaCount": 2,
+"sipaPerKm2": 0.498,
+"wellDepthMedianM": 50.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"345": {
+"sipaCount": 2,
+"sipaPerKm2": 0.502,
+"wellDepthMedianM": 25.0,
+"debitSum": 8.0,
+"kbakShare": 0.0
+},
+"346": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"347": {
+"sipaCount": 1,
+"sipaPerKm2": 0.125,
+"wellDepthMedianM": 70.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"348": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"349": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"350": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"351": {
+"sipaCount": 1,
+"sipaPerKm2": 0.169,
+"wellDepthMedianM": 216.7,
+"debitSum": 950.0,
+"kbakShare": 0.0
+},
+"352": {
+"sipaCount": 2,
+"sipaPerKm2": 0.317,
+"wellDepthMedianM": 22.5,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"353": {
+"sipaCount": 9,
+"sipaPerKm2": 2.78,
+"wellDepthMedianM": 45.0,
+"debitSum": 76.0,
+"kbakShare": 0.0
+},
+"354": {
+"sipaCount": 1,
+"sipaPerKm2": 0.354,
+"wellDepthMedianM": 40.0,
+"debitSum": 6.0,
+"kbakShare": 0.0
+},
+"355": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"356": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"357": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"358": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"359": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"360": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"361": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"362": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"363": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"364": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"365": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"366": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"367": {
+"sipaCount": 3,
+"sipaPerKm2": 1.19,
+"wellDepthMedianM": 60.0,
+"debitSum": 910.0,
+"kbakShare": 0.0
+},
+"368": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"369": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"370": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"371": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"372": {
+"sipaCount": 2,
+"sipaPerKm2": 0.88,
+"wellDepthMedianM": 90.0,
+"debitSum": 106.0,
+"kbakShare": 0.0
+},
+"373": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"374": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"375": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"376": {
+"sipaCount": 5,
+"sipaPerKm2": 0.25,
+"wellDepthMedianM": 55.0,
+"debitSum": 287.0,
+"kbakShare": 0.0
+},
+"377": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"378": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"379": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"380": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"381": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"382": {
+"sipaCount": 17,
+"sipaPerKm2": 4.194,
+"wellDepthMedianM": 70.0,
+"debitSum": 534.0,
+"kbakShare": 0.0
+},
+"383": {
+"sipaCount": 23,
+"sipaPerKm2": 10.272,
+"wellDepthMedianM": 50.0,
+"debitSum": 133.0,
+"kbakShare": 0.0
+},
+"384": {
+"sipaCount": 5,
+"sipaPerKm2": 3.014,
+"wellDepthMedianM": 65.0,
+"debitSum": 355.0,
+"kbakShare": 0.0
+},
+"385": {
+"sipaCount": 2,
+"sipaPerKm2": 0.106,
+"wellDepthMedianM": 90.0,
+"debitSum": 18.0,
+"kbakShare": 0.0
+},
+"386": {
+"sipaCount": 2,
+"sipaPerKm2": 0.489,
+"wellDepthMedianM": 50.0,
+"debitSum": 11.0,
+"kbakShare": 0.0
+},
+"387": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"388": {
+"sipaCount": 3,
+"sipaPerKm2": 0.803,
+"wellDepthMedianM": 100.0,
+"debitSum": 792.0,
+"kbakShare": 0.0
+},
+"389": {
+"sipaCount": 3,
+"sipaPerKm2": 0.941,
+"wellDepthMedianM": 60.0,
+"debitSum": 664.0,
+"kbakShare": 0.0
+},
+"390": {
+"sipaCount": 1,
+"sipaPerKm2": 0.05,
+"wellDepthMedianM": 10.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"391": {
+"sipaCount": 8,
+"sipaPerKm2": 3.328,
+"wellDepthMedianM": 50.0,
+"debitSum": 135.0,
+"kbakShare": 0.0
+},
+"392": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"393": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"394": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"395": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"396": {
+"sipaCount": 8,
+"sipaPerKm2": 2.192,
+"wellDepthMedianM": 77.5,
+"debitSum": 659.0,
+"kbakShare": 0.0
+},
+"397": {
+"sipaCount": 1,
+"sipaPerKm2": 0.248,
+"wellDepthMedianM": 80.0,
+"debitSum": 300.0,
+"kbakShare": 0.0
+},
+"398": {
+"sipaCount": 23,
+"sipaPerKm2": 4.836,
+"wellDepthMedianM": 29.5,
+"debitSum": 241.0,
+"kbakShare": 0.0
+},
+"399": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"400": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"401": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"402": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"403": {
+"sipaCount": 4,
+"sipaPerKm2": 0.699,
+"wellDepthMedianM": 50.0,
+"debitSum": 150.0,
+"kbakShare": 0.0
+},
+"404": {
+"sipaCount": 13,
+"sipaPerKm2": 3.783,
+"wellDepthMedianM": 60.0,
+"debitSum": 138.0,
+"kbakShare": 0.0
+},
+"405": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"406": {
+"sipaCount": 5,
+"sipaPerKm2": 0.397,
+"wellDepthMedianM": 63.0,
+"debitSum": 265.0,
+"kbakShare": 0.0
+},
+"407": {
+"sipaCount": 2,
+"sipaPerKm2": 0.237,
+"wellDepthMedianM": 43.0,
+"debitSum": 15.0,
+"kbakShare": 0.0
+},
+"408": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"409": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"410": {
+"sipaCount": 1,
+"sipaPerKm2": 1.194,
+"wellDepthMedianM": 87.0,
+"debitSum": 432.0,
+"kbakShare": 0.0
+},
+"411": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"412": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"413": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"414": {
+"sipaCount": 3,
+"sipaPerKm2": 1.605,
+"wellDepthMedianM": 60.0,
+"debitSum": 23.0,
+"kbakShare": 0.0
+},
+"415": {
+"sipaCount": 1,
+"sipaPerKm2": 0.225,
+"wellDepthMedianM": 40.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"416": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"417": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"418": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"419": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"420": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"421": {
+"sipaCount": 7,
+"sipaPerKm2": 2.013,
+"wellDepthMedianM": 60.0,
+"debitSum": 317.0,
+"kbakShare": 0.0
+},
+"422": {
+"sipaCount": 1,
+"sipaPerKm2": 0.275,
+"wellDepthMedianM": 125.0,
+"debitSum": 60.0,
+"kbakShare": 0.0
+},
+"423": {
+"sipaCount": 118,
+"sipaPerKm2": 45.239,
+"wellDepthMedianM": 50.0,
+"debitSum": 1302.0,
+"kbakShare": 0.0
+},
+"424": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"425": {
+"sipaCount": 4,
+"sipaPerKm2": 0.29,
+"wellDepthMedianM": 37.5,
+"debitSum": 36.0,
+"kbakShare": 0.0
+},
+"426": {
+"sipaCount": 1,
+"sipaPerKm2": 0.03,
+"wellDepthMedianM": 180.0,
+"debitSum": 25.0,
+"kbakShare": 0.0
+},
+"427": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"428": {
+"sipaCount": 3,
+"sipaPerKm2": 0.879,
+"wellDepthMedianM": 105.0,
+"debitSum": 140.0,
+"kbakShare": 0.0
+},
+"429": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"430": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"431": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"432": {
+"sipaCount": 7,
+"sipaPerKm2": 1.035,
+"wellDepthMedianM": 20.0,
+"debitSum": 41.0,
+"kbakShare": 0.0
+},
+"433": {
+"sipaCount": 1,
+"sipaPerKm2": 0.478,
+"wellDepthMedianM": 50.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"434": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"435": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"436": {
+"sipaCount": 4,
+"sipaPerKm2": 0.952,
+"wellDepthMedianM": 16.0,
+"debitSum": 33.0,
+"kbakShare": 0.0
+},
+"437": {
+"sipaCount": 2,
+"sipaPerKm2": 0.831,
+"wellDepthMedianM": 120.0,
+"debitSum": 492.0,
+"kbakShare": 0.0
+},
+"438": {
+"sipaCount": 1,
+"sipaPerKm2": 0.195,
+"wellDepthMedianM": 85.0,
+"debitSum": 40.0,
+"kbakShare": 0.0
+},
+"439": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"440": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"441": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"442": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"443": {
+"sipaCount": 2,
+"sipaPerKm2": 1.309,
+"wellDepthMedianM": 42.5,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"444": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"445": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"446": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"447": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"448": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"449": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"450": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"451": {
+"sipaCount": 50,
+"sipaPerKm2": 10.788,
+"wellDepthMedianM": 60.0,
+"debitSum": 1644.0,
+"kbakShare": 0.0
+},
+"452": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"453": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"454": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"455": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"456": {
+"sipaCount": 67,
+"sipaPerKm2": 16.156,
+"wellDepthMedianM": 50.0,
+"debitSum": 645.0,
+"kbakShare": 0.0
+},
+"457": {
+"sipaCount": 3,
+"sipaPerKm2": 2.042,
+"wellDepthMedianM": 30.0,
+"debitSum": 877.0,
+"kbakShare": 0.0
+},
+"458": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"459": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"460": {
+"sipaCount": 5,
+"sipaPerKm2": 0.237,
+"wellDepthMedianM": 22.0,
+"debitSum": 85.0,
+"kbakShare": 0.0
+},
+"461": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"462": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"463": {
+"sipaCount": 10,
+"sipaPerKm2": 3.067,
+"wellDepthMedianM": 49.0,
+"debitSum": 61.0,
+"kbakShare": 0.0
+},
+"464": {
+"sipaCount": 19,
+"sipaPerKm2": 3.566,
+"wellDepthMedianM": 50.0,
+"debitSum": 294.0,
+"kbakShare": 0.0
+},
+"465": {
+"sipaCount": 3,
+"sipaPerKm2": 0.291,
+"wellDepthMedianM": 40.0,
+"debitSum": 30.0,
+"kbakShare": 0.0
+},
+"466": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"467": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"468": {
+"sipaCount": 4,
+"sipaPerKm2": 2.586,
+"wellDepthMedianM": 31.0,
+"debitSum": 50.0,
+"kbakShare": 0.0
+},
+"469": {
+"sipaCount": 1,
+"sipaPerKm2": 0.152,
+"wellDepthMedianM": 17.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"470": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"471": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"472": {
+"sipaCount": 75,
+"sipaPerKm2": 11.937,
+"wellDepthMedianM": 50.0,
+"debitSum": 1619.0,
+"kbakShare": 0.0
+},
+"473": {
+"sipaCount": 6,
+"sipaPerKm2": 2.026,
+"wellDepthMedianM": 64.0,
+"debitSum": 224.0,
+"kbakShare": 0.0
+},
+"474": {
+"sipaCount": 7,
+"sipaPerKm2": 2.217,
+"wellDepthMedianM": 50.0,
+"debitSum": 53.0,
+"kbakShare": 0.0
+},
+"475": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"476": {
+"sipaCount": 1,
+"sipaPerKm2": 0.044,
+"wellDepthMedianM": 75.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"477": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"478": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"479": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"480": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"481": {
+"sipaCount": 4,
+"sipaPerKm2": 0.553,
+"wellDepthMedianM": 90.0,
+"debitSum": 50.0,
+"kbakShare": 0.0
+},
+"482": {
+"sipaCount": 1,
+"sipaPerKm2": 0.091,
+"wellDepthMedianM": 130.0,
+"debitSum": 100.0,
+"kbakShare": 0.0
+},
+"483": {
+"sipaCount": 43,
+"sipaPerKm2": 6.29,
+"wellDepthMedianM": 60.0,
+"debitSum": 380.0,
+"kbakShare": 0.0
+},
+"484": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"485": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"486": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"487": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"488": {
+"sipaCount": 5,
+"sipaPerKm2": 0.811,
+"wellDepthMedianM": 20.0,
+"debitSum": 31.0,
+"kbakShare": 0.0
+},
+"489": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"490": {
+"sipaCount": 18,
+"sipaPerKm2": 0.361,
+"wellDepthMedianM": 65.5,
+"debitSum": 336.0,
+"kbakShare": 0.0
+},
+"491": {
+"sipaCount": 1,
+"sipaPerKm2": 0.103,
+"wellDepthMedianM": 78.0,
+"debitSum": 8.0,
+"kbakShare": 0.0
+},
+"492": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"493": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"494": {
+"sipaCount": 8,
+"sipaPerKm2": 0.833,
+"wellDepthMedianM": 45.0,
+"debitSum": 51.0,
+"kbakShare": 0.0
+},
+"495": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"496": {
+"sipaCount": 16,
+"sipaPerKm2": 0.49,
+"wellDepthMedianM": 16.0,
+"debitSum": 182.0,
+"kbakShare": 0.0
+},
+"497": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"498": {
+"sipaCount": 1,
+"sipaPerKm2": 0.25,
+"wellDepthMedianM": 130.0,
+"debitSum": 1.0,
+"kbakShare": 0.0
+},
+"499": {
+"sipaCount": 2,
+"sipaPerKm2": 0.541,
+"wellDepthMedianM": 43.0,
+"debitSum": 13.0,
+"kbakShare": 0.0
+},
+"500": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"501": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"502": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"503": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"504": {
+"sipaCount": 8,
+"sipaPerKm2": 1.201,
+"wellDepthMedianM": 60.0,
+"debitSum": 152.0,
+"kbakShare": 0.0
+},
+"505": {
+"sipaCount": 22,
+"sipaPerKm2": 8.157,
+"wellDepthMedianM": 50.0,
+"debitSum": 191.0,
+"kbakShare": 0.0
+},
+"506": {
+"sipaCount": 11,
+"sipaPerKm2": 2.663,
+"wellDepthMedianM": 60.0,
+"debitSum": 276.0,
+"kbakShare": 0.0
+},
+"507": {
+"sipaCount": 3,
+"sipaPerKm2": 1.014,
+"wellDepthMedianM": 60.0,
+"debitSum": 29.0,
+"kbakShare": 0.0
+},
+"508": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"509": {
+"sipaCount": 1,
+"sipaPerKm2": 0.238,
+"wellDepthMedianM": 110.0,
+"debitSum": 1.0,
+"kbakShare": 0.0
+},
+"510": {
+"sipaCount": 57,
+"sipaPerKm2": 16.807,
+"wellDepthMedianM": 30.0,
+"debitSum": 683.0,
+"kbakShare": 0.0
+},
+"511": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"512": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"513": {
+"sipaCount": 1,
+"sipaPerKm2": 0.505,
+"wellDepthMedianM": 8.0,
+"debitSum": 8.0,
+"kbakShare": 0.0
+},
+"514": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"515": {
+"sipaCount": 1,
+"sipaPerKm2": 0.047,
+"wellDepthMedianM": 140.0,
+"debitSum": 25.0,
+"kbakShare": 0.556
+},
+"516": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"517": {
+"sipaCount": 2,
+"sipaPerKm2": 0.195,
+"wellDepthMedianM": 7.5,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"518": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"519": {
+"sipaCount": 4,
+"sipaPerKm2": 1.8,
+"wellDepthMedianM": 70.0,
+"debitSum": 357.0,
+"kbakShare": 0.0
+},
+"520": {
+"sipaCount": 27,
+"sipaPerKm2": 6.765,
+"wellDepthMedianM": 55.0,
+"debitSum": 298.0,
+"kbakShare": 0.0
+},
+"521": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"522": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"523": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"524": {
+"sipaCount": 3,
+"sipaPerKm2": 0.124,
+"wellDepthMedianM": 24.0,
+"debitSum": 25.0,
+"kbakShare": 0.0
+},
+"525": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"526": {
+"sipaCount": 10,
+"sipaPerKm2": 2.676,
+"wellDepthMedianM": 60.0,
+"debitSum": 83.0,
+"kbakShare": 0.0
+},
+"527": {
+"sipaCount": 23,
+"sipaPerKm2": 5.808,
+"wellDepthMedianM": 50.0,
+"debitSum": 348.0,
+"kbakShare": 0.0
+},
+"528": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"529": {
+"sipaCount": 14,
+"sipaPerKm2": 2.634,
+"wellDepthMedianM": 40.0,
+"debitSum": 306.0,
+"kbakShare": 0.0
+},
+"530": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"531": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"532": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"533": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"534": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"535": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"536": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"537": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"538": {
+"sipaCount": 2,
+"sipaPerKm2": 0.936,
+"wellDepthMedianM": 18.5,
+"debitSum": 18.0,
+"kbakShare": 0.0
+},
+"539": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"540": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"541": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"542": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"543": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"544": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"545": {
+"sipaCount": 78,
+"sipaPerKm2": 2.99,
+"wellDepthMedianM": 70.0,
+"debitSum": 4149.0,
+"kbakShare": 0.06
+},
+"546": {
+"sipaCount": 3,
+"sipaPerKm2": 0.192,
+"wellDepthMedianM": 60.0,
+"debitSum": 65.0,
+"kbakShare": 0.0
+},
+"547": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"548": {
+"sipaCount": 1,
+"sipaPerKm2": 0.041,
+"wellDepthMedianM": 75.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"549": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"550": {
+"sipaCount": 1,
+"sipaPerKm2": 0.462,
+"wellDepthMedianM": 55.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"551": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"552": {
+"sipaCount": 1,
+"sipaPerKm2": 0.321,
+"wellDepthMedianM": 45.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"553": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"554": {
+"sipaCount": 2,
+"sipaPerKm2": 2.082,
+"wellDepthMedianM": 85.0,
+"debitSum": 32.0,
+"kbakShare": 0.0
+},
+"555": {
+"sipaCount": 7,
+"sipaPerKm2": 2.06,
+"wellDepthMedianM": 85.0,
+"debitSum": 575.0,
+"kbakShare": 0.0
+},
+"556": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"557": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"558": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"559": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"560": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"561": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"562": {
+"sipaCount": 2,
+"sipaPerKm2": 0.576,
+"wellDepthMedianM": 40.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"563": {
+"sipaCount": 4,
+"sipaPerKm2": 0.412,
+"wellDepthMedianM": 32.5,
+"debitSum": 51.0,
+"kbakShare": 0.0
+},
+"564": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"565": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"566": {
+"sipaCount": 67,
+"sipaPerKm2": 9.904,
+"wellDepthMedianM": 60.0,
+"debitSum": 2269.0,
+"kbakShare": 0.0
+},
+"567": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"568": {
+"sipaCount": 8,
+"sipaPerKm2": 1.231,
+"wellDepthMedianM": 40.0,
+"debitSum": 93.0,
+"kbakShare": 0.0
+},
+"569": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"570": {
+"sipaCount": 1,
+"sipaPerKm2": 0.171,
+"wellDepthMedianM": 32.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"571": {
+"sipaCount": 11,
+"sipaPerKm2": 4.934,
+"wellDepthMedianM": 30.0,
+"debitSum": 107.0,
+"kbakShare": 0.0
+},
+"572": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"573": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"574": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"575": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"576": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"577": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"578": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"579": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"580": {
+"sipaCount": 1,
+"sipaPerKm2": 0.207,
+"wellDepthMedianM": 7.5,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"581": {
+"sipaCount": 2,
+"sipaPerKm2": 0.607,
+"wellDepthMedianM": 103.0,
+"debitSum": 388.0,
+"kbakShare": 0.0
+},
+"582": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"583": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"584": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"585": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"586": {
+"sipaCount": 2,
+"sipaPerKm2": 0.335,
+"wellDepthMedianM": 120.0,
+"debitSum": 160.0,
+"kbakShare": 0.0
+},
+"587": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"588": {
+"sipaCount": 10,
+"sipaPerKm2": 2.36,
+"wellDepthMedianM": 35.0,
+"debitSum": 148.0,
+"kbakShare": 0.0
+},
+"589": {
+"sipaCount": 1,
+"sipaPerKm2": 0.047,
+"wellDepthMedianM": 37.0,
+"debitSum": 3.0,
+"kbakShare": 0.0
+},
+"590": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"591": {
+"sipaCount": 17,
+"sipaPerKm2": 2.234,
+"wellDepthMedianM": 40.0,
+"debitSum": 1142.0,
+"kbakShare": 0.0
+},
+"592": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"593": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"594": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"595": {
+"sipaCount": 1,
+"sipaPerKm2": 0.05,
+"wellDepthMedianM": 60.0,
+"debitSum": 1.0,
+"kbakShare": 0.0
+},
+"596": {
+"sipaCount": 1,
+"sipaPerKm2": 0.063,
+"wellDepthMedianM": 8.0,
+"debitSum": 5.0,
+"kbakShare": 0.0
+},
+"597": {
+"sipaCount": 1,
+"sipaPerKm2": 0.027,
+"wellDepthMedianM": 50.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"598": {
+"sipaCount": 1,
+"sipaPerKm2": 0.286,
+"wellDepthMedianM": 80.0,
+"debitSum": 100.0,
+"kbakShare": 0.0
+},
+"599": {
+"sipaCount": 10,
+"sipaPerKm2": 2.311,
+"wellDepthMedianM": 27.5,
+"debitSum": 96.0,
+"kbakShare": 0.0
+},
+"600": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"601": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"602": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"603": {
+"sipaCount": 4,
+"sipaPerKm2": 2.85,
+"wellDepthMedianM": 77.5,
+"debitSum": 17.0,
+"kbakShare": 0.0
+},
+"604": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"605": {
+"sipaCount": 1,
+"sipaPerKm2": 1.249,
+"wellDepthMedianM": 60.0,
+"debitSum": 8.0,
+"kbakShare": 0.0
+},
+"606": {
+"sipaCount": 2,
+"sipaPerKm2": 2.279,
+"wellDepthMedianM": 151.0,
+"debitSum": 7.0,
+"kbakShare": 0.0
+},
+"607": {
+"sipaCount": 1,
+"sipaPerKm2": 0.385,
+"wellDepthMedianM": 50.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"608": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"609": {
+"sipaCount": 2,
+"sipaPerKm2": 0.636,
+"wellDepthMedianM": 60.0,
+"debitSum": 52.0,
+"kbakShare": 0.0
+},
+"610": {
+"sipaCount": 2,
+"sipaPerKm2": 0.364,
+"wellDepthMedianM": 81.5,
+"debitSum": 105.0,
+"kbakShare": 0.0
+},
+"611": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"612": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"613": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"614": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"615": {
+"sipaCount": 2,
+"sipaPerKm2": 0.102,
+"wellDepthMedianM": 67.5,
+"debitSum": 15.0,
+"kbakShare": 0.0
+},
+"616": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"617": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"618": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"619": {
+"sipaCount": 1,
+"sipaPerKm2": 0.065,
+"wellDepthMedianM": 60.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"620": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"621": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"622": {
+"sipaCount": 5,
+"sipaPerKm2": 1.963,
+"wellDepthMedianM": 50.0,
+"debitSum": 35.0,
+"kbakShare": 0.0
+},
+"623": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"624": {
+"sipaCount": 1,
+"sipaPerKm2": 0.368,
+"wellDepthMedianM": 140.0,
+"debitSum": 354.0,
+"kbakShare": 0.0
+},
+"625": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"626": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"627": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"628": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"629": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"630": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"631": {
+"sipaCount": 3,
+"sipaPerKm2": 0.928,
+"wellDepthMedianM": 40.0,
+"debitSum": 30.0,
+"kbakShare": 0.0
+},
+"632": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"633": {
+"sipaCount": 23,
+"sipaPerKm2": 2.339,
+"wellDepthMedianM": 6.0,
+"debitSum": 183.0,
+"kbakShare": 0.0
+},
+"634": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"635": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"636": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"637": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"638": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"639": {
+"sipaCount": 2,
+"sipaPerKm2": 4.549,
+"wellDepthMedianM": 50.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"640": {
+"sipaCount": 1,
+"sipaPerKm2": 0.039,
+"wellDepthMedianM": 43.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"641": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"642": {
+"sipaCount": 5,
+"sipaPerKm2": 0.984,
+"wellDepthMedianM": 50.0,
+"debitSum": 33.0,
+"kbakShare": 0.0
+},
+"643": {
+"sipaCount": 4,
+"sipaPerKm2": 0.132,
+"wellDepthMedianM": 17.0,
+"debitSum": 36.0,
+"kbakShare": 0.0
+},
+"644": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"645": {
+"sipaCount": 11,
+"sipaPerKm2": 3.146,
+"wellDepthMedianM": 50.0,
+"debitSum": 96.0,
+"kbakShare": 0.0
+},
+"646": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"647": {
+"sipaCount": 1,
+"sipaPerKm2": 0.194,
+"wellDepthMedianM": 80.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+},
+"648": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"649": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"650": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"651": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"652": {
+"sipaCount": 4,
+"sipaPerKm2": 0.861,
+"wellDepthMedianM": 45.0,
+"debitSum": 55.0,
+"kbakShare": 0.0
+},
+"653": {
+"sipaCount": 9,
+"sipaPerKm2": 2.236,
+"wellDepthMedianM": 52.0,
+"debitSum": 215.0,
+"kbakShare": 0.0
+},
+"654": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"655": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"656": {
+"sipaCount": 40,
+"sipaPerKm2": 5.507,
+"wellDepthMedianM": 60.0,
+"debitSum": 541.0,
+"kbakShare": 0.0
+},
+"657": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"658": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"659": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"660": {
+"sipaCount": 9,
+"sipaPerKm2": 2.932,
+"wellDepthMedianM": 60.0,
+"debitSum": 69.0,
+"kbakShare": 0.0
+},
+"661": {
+"sipaCount": 162,
+"sipaPerKm2": 46.737,
+"wellDepthMedianM": 50.0,
+"debitSum": 2234.2,
+"kbakShare": 0.0
+},
+"662": {
+"sipaCount": 231,
+"sipaPerKm2": 33.774,
+"wellDepthMedianM": 60.0,
+"debitSum": 3131.0,
+"kbakShare": 0.0
+},
+"663": {
+"sipaCount": 8,
+"sipaPerKm2": 2.414,
+"wellDepthMedianM": 60.0,
+"debitSum": 75.0,
+"kbakShare": 0.0
+},
+"664": {
+"sipaCount": 2,
+"sipaPerKm2": 0.168,
+"wellDepthMedianM": 148.5,
+"debitSum": 30.0,
+"kbakShare": 0.0
+},
+"665": {
+"sipaCount": 43,
+"sipaPerKm2": 12.246,
+"wellDepthMedianM": 60.0,
+"debitSum": 685.0,
+"kbakShare": 0.0
+},
+"666": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"667": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"668": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"669": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"670": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"671": {
+"sipaCount": 17,
+"sipaPerKm2": 2.693,
+"wellDepthMedianM": 60.0,
+"debitSum": 338.0,
+"kbakShare": 0.0
+},
+"672": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"673": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"674": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"675": {
+"sipaCount": 2,
+"sipaPerKm2": 0.068,
+"wellDepthMedianM": 80.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"676": {
+"sipaCount": 1,
+"sipaPerKm2": 0.202,
+"wellDepthMedianM": 120.0,
+"debitSum": 335.0,
+"kbakShare": 0.0
+},
+"677": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"678": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"679": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.001
+},
+"680": {
+"sipaCount": 1,
+"sipaPerKm2": 0.084,
+"wellDepthMedianM": 60.0,
+"debitSum": 15.0,
+"kbakShare": 0.0
+},
+"681": {
+"sipaCount": 12,
+"sipaPerKm2": 3.747,
+"wellDepthMedianM": 47.0,
+"debitSum": 2094.0,
+"kbakShare": 0.0
+},
+"682": {
+"sipaCount": 1,
+"sipaPerKm2": 0.107,
+"wellDepthMedianM": 130.0,
+"debitSum": 570.0,
+"kbakShare": 0.0
+},
+"683": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"684": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"685": {
+"sipaCount": 8,
+"sipaPerKm2": 0.303,
+"wellDepthMedianM": 41.5,
+"debitSum": 80.0,
+"kbakShare": 0.0
+},
+"686": {
+"sipaCount": 2,
+"sipaPerKm2": 1.493,
+"wellDepthMedianM": 13.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"687": {
+"sipaCount": 4,
+"sipaPerKm2": 0.195,
+"wellDepthMedianM": 100.0,
+"debitSum": 120.0,
+"kbakShare": 0.0
+},
+"688": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"689": {
+"sipaCount": 4,
+"sipaPerKm2": 1.243,
+"wellDepthMedianM": 30.0,
+"debitSum": 35.0,
+"kbakShare": 0.0
+},
+"690": {
+"sipaCount": 1,
+"sipaPerKm2": 0.218,
+"wellDepthMedianM": 120.0,
+"debitSum": 150.0,
+"kbakShare": 0.0
+},
+"691": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"692": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"693": {
+"sipaCount": 4,
+"sipaPerKm2": 0.289,
+"wellDepthMedianM": 23.0,
+"debitSum": 124.0,
+"kbakShare": 0.0
+},
+"694": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"695": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"696": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"697": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"698": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"699": {
+"sipaCount": 1,
+"sipaPerKm2": 0.052,
+"wellDepthMedianM": 90.0,
+"debitSum": 20.0,
+"kbakShare": 0.0
+},
+"700": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"701": {
+"sipaCount": 4,
+"sipaPerKm2": 0.352,
+"wellDepthMedianM": 173.0,
+"debitSum": 320.0,
+"kbakShare": 0.0
+},
+"702": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"703": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"704": {
+"sipaCount": 1,
+"sipaPerKm2": 0.159,
+"wellDepthMedianM": 120.0,
+"debitSum": 31.0,
+"kbakShare": 0.0
+},
+"705": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"706": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"707": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"708": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"709": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"710": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"711": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"712": {
+"sipaCount": 1,
+"sipaPerKm2": 0.054,
+"wellDepthMedianM": 6.0,
+"debitSum": 8.0,
+"kbakShare": 0.0
+},
+"713": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"714": {
+"sipaCount": 0,
+"sipaPerKm2": 0.0,
+"wellDepthMedianM": null,
+"debitSum": 0.0,
+"kbakShare": 0.0
+},
+"715": {
+"sipaCount": 1,
+"sipaPerKm2": 0.067,
+"wellDepthMedianM": 10.0,
+"debitSum": 10.0,
+"kbakShare": 0.0
+}
+}
+}

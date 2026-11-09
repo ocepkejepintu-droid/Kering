@@ -1,0 +1,29 @@
+[Unit]
+Description=Kering: fetch this year's rain (Open-Meteo ERA5) and publish it for Ask Kering's recent_rain tool
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=kering-agent
+Group=kering-agent
+WorkingDirectory=/srv/kering-agent/workspace
+Environment=HOME=/srv/kering-agent/home
+# Plain script, no Claude call. On any fetch failure it writes nothing, so the page keeps the last good file
+# and its data_through date.
+ExecStart=/usr/bin/python3 -s /srv/kering-agent/workspace/rain_recent.py
+# Copy the result (as root, "+") to a world-readable place nginx serves at /bali/kering/rain-recent.json.
+ExecStartPost=+/usr/bin/install -D -m 644 -o root -g root /srv/kering-agent/workspace/outputs/rain/latest.json /srv/kering-public/rain-recent.json
+
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/srv/kering-agent
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+RestrictSUIDSGID=yes
+CapabilityBoundingSet=
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX

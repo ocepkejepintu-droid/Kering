@@ -1,0 +1,739 @@
+{
+ "template": "https://wayback.maptiles.arcgis.com/arcgis/rest/services/World_Imagery/WMTS/1.0.0/default028mm/MapServer/tile/{rid}/{level}/{row}/{col}",
+ "attribution": "Imagery: Esri World Imagery Wayback (Maxar, Earthstar Geographics)",
+ "areas": {
+  "pecatu": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2010-06-22",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.102
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2015-09-15",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "DigitalGlobe",
+    "cloud": 0.009
+   },
+   {
+    "rid": 7072,
+    "release": "2018-03-28",
+    "captured": "2017-09-09",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.005
+   },
+   {
+    "rid": 4756,
+    "release": "2019-12-12",
+    "captured": "2018-04-06",
+    "res": 0.31,
+    "sensor": "WV04",
+    "provider": "DigitalGlobe",
+    "cloud": 0.264
+   },
+   {
+    "rid": 18289,
+    "release": "2020-07-01",
+    "captured": "2019-10-20",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "Maxar",
+    "cloud": 0.017
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-04-18",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.006
+   },
+   {
+    "rid": 47471,
+    "release": "2022-09-21",
+    "captured": "2022-03-24",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.005
+   },
+   {
+    "rid": 17632,
+    "release": "2023-08-10",
+    "captured": "2023-02-22",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.008
+   },
+   {
+    "rid": 34007,
+    "release": "2025-02-27",
+    "captured": "2024-09-27",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.009
+   }
+  ],
+  "uluwatu": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2010-06-22",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.002
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2014-10-15",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "DigitalGlobe",
+    "cloud": 0.013
+   },
+   {
+    "rid": 7072,
+    "release": "2018-03-28",
+    "captured": "2017-09-09",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.007
+   },
+   {
+    "rid": 4756,
+    "release": "2019-12-12",
+    "captured": "2018-04-06",
+    "res": 0.31,
+    "sensor": "WV04",
+    "provider": "DigitalGlobe",
+    "cloud": 0.088
+   },
+   {
+    "rid": 18289,
+    "release": "2020-07-01",
+    "captured": "2019-10-20",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "Maxar",
+    "cloud": 0.025
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-05-26",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.012
+   },
+   {
+    "rid": 47471,
+    "release": "2022-09-21",
+    "captured": "2022-03-24",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.008
+   },
+   {
+    "rid": 17632,
+    "release": "2023-08-10",
+    "captured": "2023-02-22",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.012
+   },
+   {
+    "rid": 34007,
+    "release": "2025-02-27",
+    "captured": "2024-09-19",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.051
+   }
+  ],
+  "jimbaran": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2009-12-12",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.072
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2015-09-15",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "DigitalGlobe",
+    "cloud": 0.042
+   },
+   {
+    "rid": 7072,
+    "release": "2018-03-28",
+    "captured": "2017-09-09",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.016
+   },
+   {
+    "rid": 4756,
+    "release": "2019-12-12",
+    "captured": "2018-04-06",
+    "res": 0.31,
+    "sensor": "WV04",
+    "provider": "DigitalGlobe",
+    "cloud": 0.172
+   },
+   {
+    "rid": 18289,
+    "release": "2020-07-01",
+    "captured": "2018-05-04",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.039
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-05-26",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.019
+   },
+   {
+    "rid": 47471,
+    "release": "2022-09-21",
+    "captured": "2022-03-24",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.022
+   },
+   {
+    "rid": 17632,
+    "release": "2023-08-10",
+    "captured": "2023-02-22",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.028
+   },
+   {
+    "rid": 34007,
+    "release": "2025-02-27",
+    "captured": "2024-09-27",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.03
+   },
+   {
+    "rid": 63116,
+    "release": "2026-09-24",
+    "captured": "2026-03-07",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Vantor",
+    "cloud": 0.03
+   }
+  ],
+  "canggu": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2009-12-12",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.024
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2015-09-15",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "DigitalGlobe",
+    "cloud": 0.058
+   },
+   {
+    "rid": 7072,
+    "release": "2018-03-28",
+    "captured": "2017-06-07",
+    "res": 0.46,
+    "sensor": "GE01",
+    "provider": "DigitalGlobe",
+    "cloud": 0.074
+   },
+   {
+    "rid": 4756,
+    "release": "2019-12-12",
+    "captured": "2018-04-06",
+    "res": 0.31,
+    "sensor": "WV04",
+    "provider": "DigitalGlobe",
+    "cloud": 0.051
+   },
+   {
+    "rid": 18289,
+    "release": "2020-07-01",
+    "captured": "2019-11-07",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.017
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-05-26",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.008
+   },
+   {
+    "rid": 47471,
+    "release": "2022-09-21",
+    "captured": "2022-03-24",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.014
+   },
+   {
+    "rid": 17632,
+    "release": "2023-08-10",
+    "captured": "2023-02-22",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.024
+   },
+   {
+    "rid": 34007,
+    "release": "2025-02-27",
+    "captured": "2024-09-27",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.023
+   },
+   {
+    "rid": 63116,
+    "release": "2026-09-24",
+    "captured": "2026-03-07",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Vantor",
+    "cloud": 0.029
+   }
+  ],
+  "pererenan": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2010-06-22",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.001
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2014-10-15",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "DigitalGlobe",
+    "cloud": 0.023
+   },
+   {
+    "rid": 15045,
+    "release": "2020-04-29",
+    "captured": "2019-11-07",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.058
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-08-06",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.006
+   },
+   {
+    "rid": 5314,
+    "release": "2022-05-18",
+    "captured": "2021-06-22",
+    "res": 0.46,
+    "sensor": "GE01",
+    "provider": "Maxar",
+    "cloud": 0.006
+   },
+   {
+    "rid": 13851,
+    "release": "2022-07-21",
+    "captured": "2021-11-23",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.006
+   },
+   {
+    "rid": 47471,
+    "release": "2022-09-21",
+    "captured": "2022-03-24",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.008
+   },
+   {
+    "rid": 17632,
+    "release": "2023-08-10",
+    "captured": "2023-02-22",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.017
+   },
+   {
+    "rid": 34007,
+    "release": "2025-02-27",
+    "captured": "2024-09-27",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.02
+   },
+   {
+    "rid": 63116,
+    "release": "2026-09-24",
+    "captured": "2025-09-23",
+    "res": 0.34,
+    "sensor": "LG03",
+    "provider": "Vantor",
+    "cloud": 0.023
+   }
+  ],
+  "kerobokan": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2009-12-12",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.062
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2015-09-15",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "DigitalGlobe",
+    "cloud": 0.09
+   },
+   {
+    "rid": 7072,
+    "release": "2018-03-28",
+    "captured": "2017-09-09",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.028
+   },
+   {
+    "rid": 4756,
+    "release": "2019-12-12",
+    "captured": "2018-04-06",
+    "res": 0.31,
+    "sensor": "WV04",
+    "provider": "DigitalGlobe",
+    "cloud": 0.031
+   },
+   {
+    "rid": 18289,
+    "release": "2020-07-01",
+    "captured": "2019-11-07",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.049
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-05-26",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.032
+   },
+   {
+    "rid": 47471,
+    "release": "2022-09-21",
+    "captured": "2022-03-12",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.059
+   },
+   {
+    "rid": 17632,
+    "release": "2023-08-10",
+    "captured": "2023-02-22",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.062
+   },
+   {
+    "rid": 34007,
+    "release": "2025-02-27",
+    "captured": "2024-09-27",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.065
+   },
+   {
+    "rid": 63116,
+    "release": "2026-09-24",
+    "captured": "2026-03-07",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Vantor",
+    "cloud": 0.069
+   }
+  ],
+  "seminyak": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2009-12-12",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.054
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2015-09-15",
+    "res": 0.31,
+    "sensor": "WV03_VNIR",
+    "provider": "DigitalGlobe",
+    "cloud": 0.02
+   },
+   {
+    "rid": 7072,
+    "release": "2018-03-28",
+    "captured": "2017-09-09",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.011
+   },
+   {
+    "rid": 4756,
+    "release": "2019-12-12",
+    "captured": "2018-04-06",
+    "res": 0.31,
+    "sensor": "WV04",
+    "provider": "DigitalGlobe",
+    "cloud": 0.032
+   },
+   {
+    "rid": 18289,
+    "release": "2020-07-01",
+    "captured": "2019-10-05",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.034
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-05-26",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.019
+   },
+   {
+    "rid": 47471,
+    "release": "2022-09-21",
+    "captured": "2022-03-12",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.037
+   },
+   {
+    "rid": 17632,
+    "release": "2023-08-10",
+    "captured": "2023-02-22",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.043
+   },
+   {
+    "rid": 34007,
+    "release": "2025-02-27",
+    "captured": "2024-09-27",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.049
+   },
+   {
+    "rid": 63116,
+    "release": "2026-09-24",
+    "captured": "2026-03-07",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Vantor",
+    "cloud": 0.054
+   }
+  ],
+  "ubud": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2000-02-16",
+    "res": 1,
+    "sensor": "Ikonos",
+    "provider": "GeoEye",
+    "cloud": 0.653
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2015-04-15",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.001
+   },
+   {
+    "rid": 15045,
+    "release": "2020-04-29",
+    "captured": "2018-09-27",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.003
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-08-10",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.004
+   },
+   {
+    "rid": 10842,
+    "release": "2026-05-28",
+    "captured": "2025-10-03",
+    "res": 0.34,
+    "sensor": "LG01",
+    "provider": "Vantor",
+    "cloud": 0.004
+   }
+  ],
+  "lembongan": [
+   {
+    "rid": 10,
+    "release": "2014-02-20",
+    "captured": "2009-12-12",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.068
+   },
+   {
+    "rid": 31026,
+    "release": "2017-02-27",
+    "captured": "2013-10-17",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "DigitalGlobe",
+    "cloud": 0.001
+   },
+   {
+    "rid": 15045,
+    "release": "2020-04-29",
+    "captured": "2019-10-29",
+    "res": 0.46,
+    "sensor": "GE01",
+    "provider": "Maxar",
+    "cloud": 0.021
+   },
+   {
+    "rid": 9812,
+    "release": "2021-02-24",
+    "captured": "2020-05-11",
+    "res": 0.46,
+    "sensor": "GE01",
+    "provider": "Maxar",
+    "cloud": 0.016
+   },
+   {
+    "rid": 5314,
+    "release": "2022-05-18",
+    "captured": "2021-02-16",
+    "res": 0.5,
+    "sensor": "WV02",
+    "provider": "Maxar",
+    "cloud": 0.015
+   },
+   {
+    "rid": 13851,
+    "release": "2022-07-21",
+    "captured": "2022-03-05",
+    "res": 0.31,
+    "sensor": "WV03",
+    "provider": "Maxar",
+    "cloud": 0.017
+   }
+  ]
+ },
+ "latest": {
+  "rid": 43291,
+  "release": "2026-10-29"
+ }
+}

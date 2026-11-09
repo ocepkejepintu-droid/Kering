@@ -1,0 +1,91 @@
+{
+ "area": "ubud",
+ "method": "Claude looked at the building's crop in every sharp capture",
+ "labels": [
+  {
+   "index": 29631,
+   "first": "2019-10-05",
+   "note": "grassy clearing 2014, brown roof 2019"
+  },
+  {
+   "index": 29914,
+   "first": "2019-10-05",
+   "note": "bare yard 2014, green-grey roof 2019"
+  },
+  {
+   "index": 11688,
+   "first": "there_by",
+   "note": "brown roof already in 2015"
+  },
+  {
+   "index": 29654,
+   "first": "there_by",
+   "note": "brown roof in 2014 among same village roofs"
+  },
+  {
+   "index": 4477,
+   "first": "there_by",
+   "note": "dark roof 2015 and 2018"
+  },
+  {
+   "index": 31860,
+   "first": "there_by",
+   "note": "brown roof row in 2015 and 2018"
+  },
+  {
+   "index": 3018,
+   "first": "there_by",
+   "note": "tan roof 2015, under canopy 2020"
+  },
+  {
+   "index": 26222,
+   "first": "there_by",
+   "note": "dark roof in town 2015, reroofed orange later"
+  },
+  {
+   "index": 11869,
+   "first": "there_by",
+   "note": "brown roof 2015"
+  },
+  {
+   "index": 18546,
+   "first": "there_by",
+   "note": "built-up roofs in dense block from 2015"
+  },
+  {
+   "index": 15803,
+   "first": "there_by",
+   "note": "roofs at outline 2015, rebuilt white 2018"
+  },
+  {
+   "index": 9925,
+   "first": "2023-02-22",
+   "note": "bare plot 2014-2019, vegetation 2020, dark roof 2023"
+  },
+  {
+   "index": 3005,
+   "first": "there_by",
+   "note": "pale walled structure 2015, roofed through 2025"
+  },
+  {
+   "index": 6679,
+   "first": "there_by",
+   "note": "pale roof 2015/2018, canopy 2020"
+  },
+  {
+   "index": 3232,
+   "first": "there_by",
+   "note": "pale structure 2015, roof 2018 on"
+  },
+  {
+   "index": 15868,
+   "first": "there_by",
+   "note": "grey roof 2015-2020 among town roofs"
+  },
+  {
+   "index": 10991,
+   "first": "there_by",
+   "note": "pale roof 2015 through 2025"
+  }
+ ]
+}

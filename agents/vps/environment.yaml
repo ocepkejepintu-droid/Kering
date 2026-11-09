@@ -1,0 +1,5 @@
+# One self-hosted environment for all Kering agents. Tools run on the Kering VPS (43.163.0.197) through
+# the worker in kering-agent.service, in /srv/kering-agent/workspace. Networking is enforced on the VPS,
+# not here: a self-hosted environment takes no networking config.
+name: kering-vps
+config: {type: self_hosted}

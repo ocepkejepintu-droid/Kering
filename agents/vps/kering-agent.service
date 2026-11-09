@@ -1,0 +1,40 @@
+[Unit]
+Description=Kering Managed Agents worker (self-hosted sandbox for env kering-vps)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+User=kering-agent
+Group=kering-agent
+# ANTHROPIC_ENVIRONMENT_ID and ANTHROPIC_ENVIRONMENT_KEY only. Never put an API key on this host.
+EnvironmentFile=/etc/kering-agent/worker.env
+Environment=HOME=/srv/kering-agent/home
+WorkingDirectory=/srv/kering-agent/workspace
+ExecStart=/usr/local/bin/ant beta:worker poll --workdir /srv/kering-agent/workspace
+Restart=always
+RestartSec=10
+
+# The agent's bash runs as this user inside these limits: it can write only under /srv/kering-agent.
+NoNewPrivileges=yes
+ProtectSystem=strict
+ReadWritePaths=/srv/kering-agent
+ProtectHome=yes
+PrivateTmp=yes
+PrivateDevices=yes
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectKernelLogs=yes
+ProtectControlGroups=yes
+ProtectClock=yes
+ProtectHostname=yes
+RestrictSUIDSGID=yes
+RestrictNamespaces=yes
+LockPersonality=yes
+CapabilityBoundingSet=
+AmbientCapabilities=
+RestrictAddressFamilies=AF_INET AF_INET6 AF_UNIX
+MemoryMax=1G
+TasksMax=128
+
+[Install]
+WantedBy=multi-user.target

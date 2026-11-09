@@ -1,0 +1,458 @@
+{
+ "generated": "2026-11-09",
+ "version": 4,
+ "n": 261,
+ "nScored": 261,
+ "weights": {
+  "growth": 25,
+  "sealed": 25,
+  "wells": 25,
+  "tourism": 15,
+  "coast": 10
+ },
+ "E0": {
+  "pass": null,
+  "note": "NOT RUN: no --ts-scores dump given"
+ },
+ "N1_missing": {
+  "villagesBySignalCount": {
+   "0": 0,
+   "1": 0,
+   "2": 0,
+   "3": 34,
+   "4": 147,
+   "5": 80
+  },
+  "scoredOnFewerThanMin": 0,
+  "nullTourism": 179,
+  "villagesWithoutMarket": 261,
+  "nullGrowth": 36,
+  "villagesBelowCoverage": 36,
+  "nullSealed": 0,
+  "nullWells": 0,
+  "villagesWithZeroPermits": 95,
+  "pass": false
+ },
+ "J1_permitJoin": {
+  "points": 3569,
+  "afterDedupe": 3548,
+  "unmatched": 3,
+  "unmatchedShare": 0.0008,
+  "pass": true
+ },
+ "M4_dryness": {
+  "distinctValues": 14,
+  "note": "ERA5 25 km cell; not in the score since v4, context on the village page only"
+ },
+ "M5_listingDensity": {
+  "note": "listingsKm2 carried at 1 decimal in this run (shapely unavailable to re-spread); villages.py now writes 3 decimals"
+ },
+ "C1_handCoded": {
+  "handCodedInputsInScore": 0,
+  "K": 32,
+  "criticalNames": [
+   "Batubulan",
+   "Benoa",
+   "Canggu",
+   "Cemagi",
+   "Dauh Peken",
+   "Gianyar",
+   "Jimbaran",
+   "Kedonganan",
+   "Keramas",
+   "Kerobokan",
+   "Kerobokan Kaja",
+   "Kerobokan Kelod",
+   "Kesiman",
+   "Kesiman Kertalangu",
+   "Kuta",
+   "Legian",
+   "Padangsambian Kelod",
+   "Pedungan",
+   "Pemecutan Kelod",
+   "Pererenan",
+   "Renon",
+   "Sanur",
+   "Sanur Kaja",
+   "Sanur Kauh",
+   "Seminyak",
+   "Sesetan",
+   "Sumerta Kelod",
+   "Tanjung Benoa",
+   "Tibubeneng",
+   "Tuban",
+   "Tumbakbayuh",
+   "Ubung"
+  ],
+  "shareOfCriticalReproducedBySingleSignal": {
+   "tourism": 0.5,
+   "growth": 0.5,
+   "sealed": 0.344,
+   "wells": 0.469,
+   "coast": 0.469
+  },
+  "pass": true
+ },
+ "S1_perturbation": {
+  "draws": 10000,
+  "topTen": {
+   "Legian": {
+    "defaultScore": 91.92,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 1.0
+   },
+   "Pererenan": {
+    "defaultScore": 91.45,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 1.0
+   },
+   "Canggu": {
+    "defaultScore": 91.07,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 1.0
+   },
+   "Kerobokan Kelod": {
+    "defaultScore": 90.99,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 1.0
+   },
+   "Seminyak": {
+    "defaultScore": 90.61,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.997
+   },
+   "Kerobokan": {
+    "defaultScore": 90.07,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 1.0
+   },
+   "Kuta": {
+    "defaultScore": 90.04,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 1.0
+   },
+   "Tibubeneng": {
+    "defaultScore": 89.74,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 1.0
+   },
+   "Sanur Kaja": {
+    "defaultScore": 89.38,
+    "band": "critical",
+    "signals": 4,
+    "keepsBand": 1.0,
+    "staysInTop10": 1.0
+   },
+   "Sanur Kauh": {
+    "defaultScore": 86.04,
+    "band": "critical",
+    "signals": 4,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.561
+   }
+  },
+  "pass": true
+ },
+ "S2_simplex": {
+  "draws": 10000,
+  "topTen": {
+   "Legian": {
+    "defaultScore": 91.92,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.964
+   },
+   "Pererenan": {
+    "defaultScore": 91.45,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.949
+   },
+   "Canggu": {
+    "defaultScore": 91.07,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.826
+   },
+   "Kerobokan Kelod": {
+    "defaultScore": 90.99,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.936
+   },
+   "Seminyak": {
+    "defaultScore": 90.61,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.85
+   },
+   "Kerobokan": {
+    "defaultScore": 90.07,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.752
+   },
+   "Kuta": {
+    "defaultScore": 90.04,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.89
+   },
+   "Tibubeneng": {
+    "defaultScore": 89.74,
+    "band": "critical",
+    "signals": 5,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.737
+   },
+   "Sanur Kaja": {
+    "defaultScore": 89.38,
+    "band": "critical",
+    "signals": 4,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.871
+   },
+   "Sanur Kauh": {
+    "defaultScore": 86.04,
+    "band": "critical",
+    "signals": 4,
+    "keepsBand": 1.0,
+    "staysInTop10": 0.189
+   }
+  },
+  "verdict": "descriptive"
+ },
+ "L1_leaveOneOut": {
+  "tourism": {
+   "spearmanVsDefault": 0.995,
+   "leaveCritical": [],
+   "enterCritical": [
+    "Dangin Puri Kelod",
+    "Dauh Puri Kelod",
+    "Kesiman Petilan",
+    "Padang Sambian Kaja",
+    "Padangsambian",
+    "Panjer",
+    "Pemogan",
+    "Sidakarya",
+    "Sumerta Kaja"
+   ]
+  },
+  "growth": {
+   "spearmanVsDefault": 0.968,
+   "leaveCritical": [
+    "Dauh Peken",
+    "Kesiman",
+    "Pedungan",
+    "Ubung"
+   ],
+   "enterCritical": [
+    "Dangin Puri",
+    "Dangin Puri Kelod",
+    "Dauh Puri",
+    "Dauh Puri Kangin",
+    "Dauh Puri Kauh",
+    "Dauh Puri Kelod",
+    "Padangsambian",
+    "Panjer",
+    "Peliatan",
+    "Sayan",
+    "Sumerta Kaja",
+    "Sumerta Kauh",
+    "Ubud"
+   ]
+  },
+  "sealed": {
+   "spearmanVsDefault": 0.953,
+   "leaveCritical": [
+    "Dauh Peken",
+    "Gianyar",
+    "Kesiman",
+    "Pedungan",
+    "Renon",
+    "Sesetan",
+    "Sumerta Kelod",
+    "Ubung"
+   ],
+   "enterCritical": [
+    "Abianbase",
+    "Belalang",
+    "Kutuh",
+    "Munggu",
+    "Pecatu",
+    "Pejeng",
+    "Sayan",
+    "Singakerta",
+    "Tibubiu",
+    "Ungasan"
+   ]
+  },
+  "wells": {
+   "spearmanVsDefault": 0.959,
+   "leaveCritical": [
+    "Cemagi",
+    "Dauh Peken",
+    "Gianyar",
+    "Keramas",
+    "Renon",
+    "Sanur",
+    "Ubung"
+   ],
+   "enterCritical": [
+    "Kesiman Petilan",
+    "Pemogan",
+    "Sidakarya",
+    "Tegal Harum",
+    "Ungasan"
+   ]
+  },
+  "coast": {
+   "spearmanVsDefault": 0.992,
+   "leaveCritical": [
+    "Kedonganan",
+    "Keramas",
+    "Kesiman",
+    "Pedungan"
+   ],
+   "enterCritical": [
+    "Buduk",
+    "Dalung",
+    "Dauh Puri Kelod",
+    "Mas",
+    "Padang Sambian Kaja",
+    "Pejeng",
+    "Petulu",
+    "Sayan",
+    "Sibangkaja",
+    "Singakerta",
+    "Ubud"
+   ]
+  }
+ },
+ "O3_sipaByKabupaten": {
+  "verdict": "descriptive (4 points)",
+  "byKab": {
+   "Badung": {
+    "sipaPermits": 1134,
+    "scoredVillages": 59,
+    "meanScore": 56.5
+   },
+   "Kota Denpasar": {
+    "sipaPermits": 381,
+    "scoredVillages": 43,
+    "meanScore": 69.4
+   },
+   "Gianyar": {
+    "sipaPermits": 278,
+    "scoredVillages": 60,
+    "meanScore": 51.7
+   },
+   "Tabanan": {
+    "sipaPermits": 123,
+    "scoredVillages": 93,
+    "meanScore": 31.6
+   }
+  }
+ },
+ "O4_intrusionPoints": {
+  "verdict": "descriptive (3 points)",
+  "points": {
+   "Kerobokan Kelod": {
+    "source": "Sukearsana, Sila Dharma, Nuarsa 2015, Ecotrophic 9(2): 78.44 ha intruded at Petitenget/Batubelig, 14 of 60 wells degraded",
+    "score": 91.0,
+    "band": "critical",
+    "rank": 4
+   },
+   "Sumerta Kaja": {
+    "source": "Badan Geologi: groundwater-decline zone in CAT Denpasar-Tabanan (reported, snippet)",
+    "score": 73.2,
+    "band": "high",
+    "rank": 45
+   },
+   "Sading": {
+    "source": "Badan Geologi: groundwater-decline zone in CAT Denpasar-Tabanan (reported, snippet)",
+    "score": 54.5,
+    "band": "watch",
+    "rank": 107
+   }
+  }
+ },
+ "signalCounts": {
+  "fewerThanAll": 181,
+  "byKabupaten": {
+   "Badung": {
+    "3": 1,
+    "4": 41,
+    "5": 17
+   },
+   "Bangli": {
+    "3": 1,
+    "4": 0,
+    "5": 0
+   },
+   "Gianyar": {
+    "3": 16,
+    "4": 40,
+    "5": 4
+   },
+   "Klungkung": {
+    "3": 0,
+    "4": 2,
+    "5": 3
+   },
+   "Kota Denpasar": {
+    "3": 0,
+    "4": 3,
+    "5": 40
+   },
+   "Tabanan": {
+    "3": 16,
+    "4": 61,
+    "5": 16
+   }
+  },
+  "criticalOnFewerThanAll": [
+   "Batubulan",
+   "Gianyar",
+   "Kedonganan",
+   "Keramas",
+   "Sanur Kaja",
+   "Sanur Kauh",
+   "Tuban",
+   "Tumbakbayuh"
+  ]
+ },
+ "O1_podes": {
+  "passRule": "Spearman rho >= 0.4 between score and the desa share of households on tanker, bottled or piped water",
+  "status": "NOT RUNNABLE at desa level (no --outside podes CSV; bali.bps.go.id and silastik.bps.go.id answer 403; kabupaten tables from the 2024/2025 publications are descriptive only)"
+ },
+ "O2_blindWells": {
+  "passRule": "Critical median conductivity > Low, Mann-Whitney one-sided p < 0.05",
+  "status": "NOT RUNNABLE (field work; no --outside wells CSV)"
+ },
+ "verdict": "FAIL",
+ "verdictNote": "Outside checks O1 and O2 not runnable, so PASS is not reachable from here."
+}

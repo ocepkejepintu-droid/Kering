@@ -1,0 +1,533 @@
+<title>Kering Satellite Concepts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..700&display=swap">
+<style>
+/* Layout: app frame. Top bar with three concept tabs; each concept is a stage (the satellite) plus a side panel. Kering tokens. */
+:root{
+  --canvas:#fafafa; --card:#ffffff; --muted:#f4f4f4; --border:#e8e8e8; --fg:#171717; --sub:#6b6b6b;
+  --brand:#2563eb; --brand-soft:rgb(37 99 235 / .1); --roof:#c55f1d; --roof-soft:rgb(197 95 29 / .14); --water:#1f7aa3; --up:#2f8a5b;
+  --font:"Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  --shadow:0 1px 2px rgb(0 0 0 / .05), 0 8px 24px rgb(0 0 0 / .08);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --canvas:#141414; --card:#1b1b1b; --muted:#242424; --border:rgb(255 255 255 / .09); --fg:#f2f2f2; --sub:#a3a3a3;
+  --brand:#6b9bff; --brand-soft:rgb(107 155 255 / .16); --roof:#e48a48; --roof-soft:rgb(228 138 72 / .18); --water:#5fb3d6; --up:#5fc08a; color-scheme:dark }}
+:root[data-theme="dark"]{
+  --canvas:#141414; --card:#1b1b1b; --muted:#242424; --border:rgb(255 255 255 / .09); --fg:#f2f2f2; --sub:#a3a3a3;
+  --brand:#6b9bff; --brand-soft:rgb(107 155 255 / .16); --roof:#e48a48; --roof-soft:rgb(228 138 72 / .18); --water:#5fb3d6; --up:#5fc08a; color-scheme:dark }
+*{box-sizing:border-box}
+html,body{height:100%}
+body{margin:0;background:var(--canvas);color:var(--fg);font:14px/1.5 var(--font);font-feature-settings:"cv11","ss01";-webkit-font-smoothing:antialiased}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--brand);outline-offset:2px}
+.num{font-variant-numeric:tabular-nums}
+.app{display:flex;flex-direction:column;min-height:100%}
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;display:flex;align-items:center;gap:16px;flex-wrap:wrap;padding:10px max(16px,env(safe-area-inset-right,0px)) 10px max(16px,env(safe-area-inset-left,0px));background:var(--card);border-bottom:1px solid var(--border)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--card)}
+.brand{display:flex;align-items:center;gap:10px;font-weight:600;letter-spacing:-.01em}
+.brand small{display:block;font-weight:400;font-size:12px;color:var(--sub)}
+.logo{width:24px;height:24px;border-radius:6px;background:var(--fg);display:grid;place-items:center}
+.tabs{display:flex;gap:2px;padding:3px;border-radius:10px;background:var(--muted);margin-left:auto;overflow-x:auto;max-width:100%}
+.tabs button{border:0;background:transparent;padding:6px 12px;border-radius:7px;cursor:pointer;color:var(--sub);white-space:nowrap;display:flex;gap:8px;align-items:center}
+.tabs button[aria-selected="true"]{background:var(--card);color:var(--fg);box-shadow:0 1px 2px rgb(0 0 0 / .06);font-weight:500}
+.tabs .k{font-size:11px;color:var(--sub);border:1px solid var(--border);border-radius:5px;padding:0 5px}
+main{flex:1;padding:16px max(16px,env(safe-area-inset-right,0px)) 24px max(16px,env(safe-area-inset-left,0px))}
+.concept{display:grid;grid-template-columns:minmax(0,1fr) 340px;gap:16px;max-width:1440px;margin:0 auto;align-items:start}
+@media (max-width:980px){.concept{grid-template-columns:1fr}}
+.stage{position:relative;width:min(100%,calc((100dvh - 120px) * 1.416));margin:0 auto;border-radius:12px;overflow:hidden;border:1px solid var(--border);background:#0b0f12;aspect-ratio:480/339;max-width:100%;touch-action:none;user-select:none}
+.stage canvas{position:absolute;inset:0;width:100%;height:100%;display:block}
+.panel{background:var(--card);border:1px solid var(--border);border-radius:12px;padding:16px;display:grid;gap:14px;min-width:0}
+.panel h2{margin:0;font-size:16px;font-weight:600;letter-spacing:-.01em}
+.panel p{margin:0;color:var(--sub)}
+.how{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.how li{display:grid;grid-template-columns:22px 1fr;gap:8px;color:var(--sub);font-size:13px}
+.how b{color:var(--fg);font-weight:500}
+.how .i{width:22px;height:22px;border-radius:6px;background:var(--muted);display:grid;place-items:center;font-size:12px;color:var(--fg)}
+.kpis{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--border);border:1px solid var(--border);border-radius:10px;overflow:hidden}
+.kpi{background:var(--card);padding:10px 12px;display:grid;gap:2px}
+.kpi dt{font-size:12px;color:var(--sub)}
+.kpi dd{margin:0;font-size:20px;font-weight:600;letter-spacing:-.02em}
+.kpi .d{font-size:12px;color:var(--sub)}
+.roof{color:var(--roof)} .water{color:var(--water)}
+.hint{position:absolute;left:12px;bottom:12px;z-index:3;background:rgb(10 12 14 / .72);color:#fff;font-size:12px;padding:6px 10px;border-radius:8px;backdrop-filter:blur(6px);pointer-events:none;transition:opacity .3s}
+.chip{position:absolute;z-index:4;pointer-events:none;max-width:calc(100% - 16px);overflow:hidden;text-overflow:ellipsis;background:rgb(255 255 255 / .96);color:#171717;font-size:12px;border-radius:999px;padding:4px 10px;box-shadow:var(--shadow);white-space:nowrap;font-variant-numeric:tabular-nums;transform:translate(-50%,0)}
+.chip b{font-weight:600}
+.years{display:flex;gap:4px;flex-wrap:wrap}
+.years button{border:1px solid var(--border);background:var(--card);border-radius:7px;padding:3px 9px;cursor:pointer;font-variant-numeric:tabular-nums;font-size:13px}
+.years button[aria-pressed="true"]{border-color:var(--brand);background:var(--brand-soft);color:var(--brand);font-weight:500}
+.toggle{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--sub);cursor:pointer}
+.toggle input{accent-color:var(--brand)}
+/* scrubber */
+.scrub{margin-top:12px;background:var(--card);border:1px solid var(--border);border-radius:12px;padding:12px 14px 14px;display:grid;gap:8px}
+.scrub-head{display:flex;align-items:center;gap:10px}
+.play{width:32px;height:32px;border-radius:8px;border:1px solid var(--border);background:var(--card);cursor:pointer;display:grid;place-items:center}
+.lane{display:grid;grid-template-columns:110px minmax(0,1fr);align-items:center;gap:10px}
+.lane .lab{font-size:12px;color:var(--sub);line-height:1.3}
+.lane svg{width:100%;height:46px;display:block;overflow:visible}
+.film{position:relative;height:56px;cursor:ew-resize;touch-action:none}
+.film .strip{display:grid;gap:2px;height:100%;border-radius:8px;overflow:hidden}
+.film img{width:100%;height:100%;object-fit:cover;display:block;opacity:.75}
+.film .head{position:absolute;top:-4px;bottom:-4px;width:3px;border-radius:2px;background:var(--brand);box-shadow:0 0 0 3px var(--brand-soft);transform:translateX(-50%);pointer-events:none}
+.film .tag{position:absolute;bottom:6px;transform:translateX(-50%);background:var(--brand);color:#fff;font-size:12px;font-weight:600;padding:2px 8px;border-radius:6px;pointer-events:none;font-variant-numeric:tabular-nums}
+.ticks{display:grid;font-size:11px;color:var(--sub);text-align:center;font-variant-numeric:tabular-nums}
+/* story */
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:6px}
+.tile{display:grid;gap:3px}
+.tile canvas{width:100%;aspect-ratio:1;border-radius:6px;display:block;border:1px solid var(--border)}
+.tile span{font-size:11px;color:var(--sub);text-align:center;font-variant-numeric:tabular-nums}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;height:36px;padding:0 14px;border-radius:8px;border:1px solid var(--fg);background:var(--fg);color:var(--card);font-weight:500;cursor:pointer}
+.btn:disabled{opacity:.5;cursor:not-allowed}
+.story{border:1px solid var(--border);border-radius:10px;padding:12px;background:var(--canvas);font-size:14px}
+.story .who{font-size:12px;color:var(--sub);margin-bottom:4px}
+.spark{width:100%;height:56px;display:block;overflow:visible}
+.legend{display:flex;gap:14px;font-size:12px;color:var(--sub)}
+.legend i{display:inline-block;width:10px;height:3px;border-radius:2px;margin-right:6px;vertical-align:middle}
+.note{font-size:12px;color:var(--sub)}
+[hidden]{display:none!important}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<div class="app">
+  <header class="bar">
+    <div class="brand">
+      <span class="logo" aria-hidden="true"><svg width="14" height="14" viewBox="0 0 24 24"><path d="M12 3c-3.2 4.4-5.4 7.5-5.4 10.5a5.4 5.4 0 0 0 10.8 0C17.4 10.5 15.2 7.4 12 3Z" fill="var(--card)"/></svg></span>
+      <div>Kering satellite concepts<small>Pecatu and Ungasan, Bukit · Sentinel-2, 2018–2026</small></div>
+    </div>
+    <nav class="tabs" role="tablist" aria-label="Concepts">
+      <button role="tab" id="tab-lens" aria-selected="true" data-c="lens"><span class="k">1</span>Time lens</button>
+      <button role="tab" id="tab-growth" aria-selected="false" data-c="growth"><span class="k">2</span>Growth scrubber</button>
+      <button role="tab" id="tab-story" aria-selected="false" data-c="story"><span class="k">3</span>Spot story</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- 1. TIME LENS -->
+    <section class="concept" id="c-lens" role="tabpanel" aria-labelledby="tab-lens">
+      <div>
+        <div class="stage" id="lensStage" tabindex="0" aria-label="2026 image with a lens that shows an earlier year. Move with the pointer or arrow keys, change the year with the scroll wheel or the year buttons.">
+          <canvas id="lensCanvas"></canvas>
+          <div class="chip" id="lensChip"></div>
+          <div class="hint" id="lensHint">Move to explore · scroll inside the lens to travel in time</div>
+        </div>
+      </div>
+      <aside class="panel">
+        <div><h2>Time lens</h2><p>The whole frame is 2026. Inside the lens you see the same ground in an earlier year.</p></div>
+        <div style="display:grid;gap:6px">
+          <div class="note">Year inside the lens</div>
+          <div class="years" id="lensYears" role="group" aria-label="Year inside the lens"></div>
+        </div>
+        <label class="toggle"><input type="checkbox" id="lensMark" checked> Outline what was built since that year</label>
+        <dl class="kpis">
+          <div class="kpi"><dt>Built or cleared</dt><dd class="num" id="lkRoof">–</dd><span class="d" id="lkRoofD"></span></div>
+          <div class="kpi"><dt>Green, lens</dt><dd class="num" id="lkGreen">–</dd><span class="d" id="lkGreenD"></span></div>
+        </dl>
+        <ul class="how">
+          <li><span class="i">↔</span><span><b>Hover or drag</b> to move the lens over any patch.</span></li>
+          <li><span class="i">⇅</span><span><b>Scroll or pinch</b> inside it to step the year from 2018 to 2025.</span></li>
+          <li><span class="i">⌨</span><span><b>Arrow keys</b> move it, <b>[ and ]</b> change the year.</span></li>
+        </ul>
+        <p class="note">Why it works: you always compare the same ground, and the numbers follow your hand.</p>
+      </aside>
+    </section>
+
+    <!-- 2. GROWTH SCRUBBER -->
+    <section class="concept" id="c-growth" role="tabpanel" aria-labelledby="tab-growth" hidden>
+      <div>
+        <div class="stage" id="growStage" style="width:min(100%,calc((100dvh - 400px) * 1.416))" aria-label="Satellite frame for the year under the playhead, with new roofs painted orange">
+          <canvas id="growCanvas"></canvas>
+          <div class="hint">Orange: ground that turned into roofs or cleared plots since 2018–19</div>
+        </div>
+        <div class="scrub">
+          <div class="scrub-head">
+            <button class="play" id="growPlay" aria-label="Play through the years"><svg width="14" height="14" viewBox="0 0 24 24" id="playIcon"><path d="M7 5v14l12-7z" fill="currentColor"/></svg></button>
+            <div class="num" style="font-weight:600" id="growYear">2026</div>
+            <div class="note num" id="growDate"></div>
+            <div class="legend" style="margin-left:auto"><span><i style="background:var(--roof)"></i>New roofs</span><span><i style="background:var(--water)"></i>Jun–Oct rain</span></div>
+          </div>
+          <div class="lane"><div class="lab">New roofs since 2018, % of land</div><svg id="laneRoof" role="img" aria-label="Share of land newly built, by year"></svg></div>
+          <div class="lane"><div class="lab">Dry-season rain, mm</div><svg id="laneRain" role="img" aria-label="June to October rain by year"></svg></div>
+          <div class="lane"><div class="lab">Drag the strip</div>
+            <div>
+              <div class="film" id="film" role="slider" tabindex="0" aria-label="Year" aria-valuemin="2018" aria-valuemax="2026" aria-valuenow="2026">
+                <div class="strip" id="strip"></div>
+                <div class="head" id="head"></div>
+                <div class="tag" id="tag">2026</div>
+              </div>
+              <div class="ticks" id="ticks"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <aside class="panel">
+        <div><h2>Growth scrubber</h2><p>One gesture tells the story: drag through the years and watch the rain hold while the orange spreads.</p></div>
+        <dl class="kpis">
+          <div class="kpi"><dt>New roofs by this year</dt><dd class="num roof" id="gkRoof">–</dd><span class="d">of land, since 2018–19</span></div>
+          <div class="kpi"><dt>Rain that dry season</dt><dd class="num water" id="gkRain">–</dd><span class="d">June to October</span></div>
+        </dl>
+        <p id="growSay" style="color:var(--fg)"></p>
+        <ul class="how">
+          <li><span class="i">↔</span><span><b>Drag the filmstrip</b>. Frames crossfade, so you never jump.</span></li>
+          <li><span class="i">▶</span><span><b>Play</b> runs 2018 to 2026 in six seconds.</span></li>
+          <li><span class="i">⌨</span><span><b>Arrow keys</b> step one year when the strip has focus.</span></li>
+        </ul>
+        <p class="note">A pixel turns orange only once it stays bright in most later frames, so passing clouds and one hazy frame do not count. That also means 2026 cannot add new orange until a later frame confirms it. Indicative at 10 m.</p>
+      </aside>
+    </section>
+
+    <!-- 3. SPOT STORY -->
+    <section class="concept" id="c-story" role="tabpanel" aria-labelledby="tab-story" hidden>
+      <div>
+        <div class="stage" id="storyStage" tabindex="0" aria-label="2026 image. Tap a spot to see its history.">
+          <canvas id="storyCanvas"></canvas>
+          <div class="hint">Tap any spot · the brightest orange squares changed most</div>
+        </div>
+      </div>
+      <aside class="panel">
+        <div><h2>Spot story</h2><p id="storyWhere">A 280 m patch, every year since 2018.</p></div>
+        <div class="tiles" id="tiles"></div>
+        <div>
+          <svg class="spark" id="spark" role="img" aria-label="Roof and green share of this patch by year"></svg>
+          <div class="legend"><span><i style="background:var(--roof)"></i>Built since 2019</span><span><i style="background:var(--up)"></i>Green</span></div>
+        </div>
+        <div class="story"><div class="who">Measured from the pixels</div><div id="storyRule"></div></div>
+        <div class="story" id="storyAiBox" hidden><div class="who">Claude, reading the nine tiles</div><div id="storyAi"></div></div>
+        <button class="btn" id="storyAsk" type="button">Ask Claude what happened here</button>
+        <p class="note" id="storyNote">Claude sees the nine tiles as one image and is told to describe only what 10 m imagery can show.</p>
+      </aside>
+    </section>
+  </main>
+</div>
+
+<script>/*__DATA__*/</script>
+<script>
+(() => {
+"use strict";
+const D = window.KERING_SAT;
+const W = D.change.w, H = D.change.h, N = D.frames.length;
+const YEARS = D.frames.map(f => f.year);
+const $ = id => document.getElementById(id);
+const css = v => getComputedStyle(document.documentElement).getPropertyValue(v).trim();
+const fmt = (n, d = 0) => Number(n).toLocaleString("en-US", { maximumFractionDigits: d, minimumFractionDigits: d });
+const reduced = matchMedia("(prefers-reduced-motion: reduce)").matches;
+const ROOF_RGB = [240, 130, 50];
+
+/* ---------- data: frames, per-pixel masks ---------- */
+const code = Uint8Array.from(atob(D.change.b64), c => c.charCodeAt(0)); // 254 sea, 255 land unchanged, k = first frame it became a roof
+const isLand = i => code[i] !== 254;
+const imgs = [], px = [];
+let bright = [], green = [];
+function loadAll() {
+  return Promise.all(D.frames.map((f, k) => new Promise(res => {
+    const im = new Image(); im.onload = () => { imgs[k] = im; res(); }; im.src = f.img;
+  }))).then(() => {
+    const c = document.createElement("canvas"); c.width = W; c.height = H;
+    const g = c.getContext("2d", { willReadFrequently: true });
+    imgs.forEach((im, k) => {
+      g.clearRect(0, 0, W, H); g.drawImage(im, 0, 0, W, H);
+      const d = g.getImageData(0, 0, W, H).data; px[k] = d;
+      const gain = D.norm.target / D.norm.median[k];
+      const b = new Uint8Array(W * H), gr = new Uint8Array(W * H);
+      for (let i = 0, j = 0; i < W * H; i++, j += 4) {
+        if (!isLand(i)) continue;
+        const r = d[j], gg = d[j + 1], bb = d[j + 2];
+        if ((r + gg + bb) * gain > 470 && Math.abs(r - bb) < 55) b[i] = 1;
+        if (gg > r + 5 && gg > bb) gr[i] = 1;
+      }
+      bright[k] = b; green[k] = gr;
+    });
+  });
+}
+/* overlay of pixels built after year index `from` and by `to`, as a canvas */
+const overlayCache = new Map();
+function overlay(from, to, alpha = 190) {
+  const key = from + ":" + to + ":" + alpha;
+  if (overlayCache.has(key)) return overlayCache.get(key);
+  const c = document.createElement("canvas"); c.width = W; c.height = H;
+  const g = c.getContext("2d"); const id = g.createImageData(W, H);
+  for (let i = 0; i < W * H; i++) { const k = code[i]; if (k < 254 && k > from && k <= to) { const j = i * 4; id.data[j] = ROOF_RGB[0]; id.data[j + 1] = ROOF_RGB[1]; id.data[j + 2] = ROOF_RGB[2]; id.data[j + 3] = alpha; } }
+  g.putImageData(id, 0, 0); overlayCache.set(key, c); return c;
+}
+/* share of land pixels in a region that are bright / green in frame k */
+function regionStats(k, test) {
+  let land = 0, b = 0, gr = 0;
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) {
+    if (!test(x, y)) continue; const i = y * W + x; if (!isLand(i)) continue;
+    land++; b += bright[k][i]; gr += green[k][i];
+  }
+  return { land, roof: land ? b / land : 0, green: land ? gr / land : 0 };
+}
+function builtShare(test, from, to = N - 1) {
+  let land = 0, nb = 0;
+  for (let y = 0; y < H; y++) for (let x = 0; x < W; x++) { if (!test(x, y)) continue; const i = y * W + x; if (!isLand(i)) continue; land++; const k = code[i]; if (k < 254 && k > from && k <= to) nb++; }
+  return land ? nb / land : 0;
+}
+const landTotal = (() => { let n = 0; for (let i = 0; i < W * H; i++) n += isLand(i) ? 1 : 0; return n; })();
+const newShareBy = YEARS.map((_, k) => { let n = 0; for (let i = 0; i < W * H; i++) if (code[i] < 254 && code[i] <= k) n++; return n / landTotal; });
+
+/* ---------- canvas helper: crisp at device pixel ratio ---------- */
+function fit(canvas) {
+  const r = canvas.getBoundingClientRect(), dpr = Math.min(devicePixelRatio || 1, 2);
+  const w = Math.round(r.width * dpr), h = Math.round(r.height * dpr);
+  if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; }
+  const g = canvas.getContext("2d"); g.imageSmoothingQuality = "high"; return { g, w, h, sx: w / W, sy: h / H, rect: r };
+}
+const toImg = (e, el) => { const r = el.getBoundingClientRect(); return { x: (e.clientX - r.left) / r.width * W, y: (e.clientY - r.top) / r.height * H, cx: e.clientX - r.left, cy: e.clientY - r.top }; };
+
+/* =========================================================
+   1. TIME LENS
+   ========================================================= */
+const lens = { x: 0, y: 0, k: 0, r: 46 /* image px ≈ 530 m across */, mark: true, moved: false };
+function drawLens() {
+  const c = $("lensCanvas"); const { g, w, h, sx } = fit(c);
+  const last = N - 1;
+  g.drawImage(imgs[last], 0, 0, w, h);
+  // dim outside the lens slightly so the eye goes to the lens
+  g.fillStyle = "rgba(0,0,0,.18)"; g.fillRect(0, 0, w, h);
+  const cx = lens.x * sx, cy = lens.y * sx, R = lens.r * sx;
+  g.save(); g.beginPath(); g.arc(cx, cy, R, 0, Math.PI * 2); g.clip();
+  g.drawImage(imgs[lens.k], 0, 0, w, h);
+  if (lens.mark) { g.globalAlpha = .9; g.drawImage(overlay(lens.k, last, 170), 0, 0, w, h); g.globalAlpha = 1; }
+  g.restore();
+  // ring
+  g.lineWidth = 3 * (w / c.getBoundingClientRect().width); g.strokeStyle = "#fff";
+  g.shadowColor = "rgba(0,0,0,.45)"; g.shadowBlur = 12;
+  g.beginPath(); g.arc(cx, cy, R, 0, Math.PI * 2); g.stroke(); g.shadowBlur = 0;
+  // year tab on the ring
+  const scale = w / c.getBoundingClientRect().width;
+  const label = String(YEARS[lens.k]);
+  g.font = `600 ${12 * scale}px Inter, system-ui, sans-serif`;
+  const tw = g.measureText(label).width + 16 * scale, th = 22 * scale;
+  g.fillStyle = "#fff"; roundRect(g, cx - tw / 2, cy - R - th / 2, tw, th, 11 * scale); g.fill();
+  g.fillStyle = "#171717"; g.textAlign = "center"; g.textBaseline = "middle"; g.fillText(label, cx, cy - R);
+  // stats + chip
+  const inLens = (x, y) => (x - lens.x) ** 2 + (y - lens.y) ** 2 <= lens.r ** 2;
+  const a = regionStats(lens.k, inLens), b = regionStats(last, inLens);
+  const built = builtShare(inLens, lens.k), dg = (b.green - a.green) * 100, dr = built * 100;
+  const chip = $("lensChip"); const rect = c.getBoundingClientRect();
+  chip.innerHTML = `Since ${YEARS[lens.k]}: <b>${fmt(dr)}% of this circle built or cleared</b> · green ${dg >= 0 ? "+" : ""}${fmt(dg)} pts`;
+  const half = Math.min(chip.offsetWidth, rect.width - 16) / 2 + 8;
+  chip.style.left = Math.min(Math.max(cx / scale, half), rect.width - half) + "px";
+  chip.style.top = Math.min(cy / scale + R / scale + 10, rect.height - chip.offsetHeight - 8) + "px";
+  $("lkRoof").textContent = `${fmt(dr)}%`;
+  $("lkRoofD").textContent = `of the lens, since ${YEARS[lens.k]}`;
+  $("lkGreen").textContent = `${fmt(a.green * 100)}% → ${fmt(b.green * 100)}%`;
+  $("lkGreenD").textContent = `${YEARS[lens.k]} to 2026, swings with rain`;
+}
+function roundRect(g, x, y, w, h, r) { g.beginPath(); g.moveTo(x + r, y); g.arcTo(x + w, y, x + w, y + h, r); g.arcTo(x + w, y + h, x, y + h, r); g.arcTo(x, y + h, x, y, r); g.arcTo(x, y, x + w, y, r); g.closePath(); }
+function setLensYear(k) {
+  lens.k = Math.max(0, Math.min(N - 2, k));
+  document.querySelectorAll("#lensYears button").forEach(b => b.setAttribute("aria-pressed", +b.dataset.k === lens.k));
+  drawLens();
+}
+function initLens() {
+  $("lensYears").innerHTML = YEARS.slice(0, N - 1).map((y, k) => `<button type="button" data-k="${k}" aria-pressed="${k === 0}">${y}</button>`).join("");
+  $("lensYears").addEventListener("click", e => { const b = e.target.closest("button"); if (b) setLensYear(+b.dataset.k); });
+  $("lensMark").addEventListener("change", e => { lens.mark = e.target.checked; drawLens(); });
+  const st = $("lensStage");
+  const move = e => { const p = toImg(e, st); lens.x = Math.max(0, Math.min(W, p.x)); lens.y = Math.max(0, Math.min(H, p.y)); if (!lens.moved) { lens.moved = true; $("lensHint").style.opacity = 0; } drawLens(); };
+  st.addEventListener("pointermove", move);
+  st.addEventListener("pointerdown", e => { st.setPointerCapture(e.pointerId); move(e); });
+  let acc = 0;
+  st.addEventListener("wheel", e => { e.preventDefault(); acc += e.deltaY; if (Math.abs(acc) > 60) { setLensYear(lens.k + (acc > 0 ? 1 : -1)); acc = 0; } }, { passive: false });
+  // pinch: spread = further back in time
+  const touches = new Map(); let pinch0 = null, k0 = 0;
+  st.addEventListener("pointerdown", e => { touches.set(e.pointerId, e); if (touches.size === 2) { const [a, b] = [...touches.values()]; pinch0 = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); k0 = lens.k; } });
+  st.addEventListener("pointermove", e => { if (!touches.has(e.pointerId)) return; touches.set(e.pointerId, e); if (touches.size === 2 && pinch0) { const [a, b] = [...touches.values()]; const d = Math.hypot(a.clientX - b.clientX, a.clientY - b.clientY); setLensYear(k0 - Math.round((d - pinch0) / 40)); } });
+  const end = e => { touches.delete(e.pointerId); if (touches.size < 2) pinch0 = null; };
+  st.addEventListener("pointerup", end); st.addEventListener("pointercancel", end);
+  st.addEventListener("keydown", e => {
+    const step = 8;
+    if (e.key === "ArrowLeft") lens.x -= step; else if (e.key === "ArrowRight") lens.x += step;
+    else if (e.key === "ArrowUp") lens.y -= step; else if (e.key === "ArrowDown") lens.y += step;
+    else if (e.key === "[") return setLensYear(lens.k - 1); else if (e.key === "]") return setLensYear(lens.k + 1); else return;
+    e.preventDefault(); lens.x = Math.max(0, Math.min(W, lens.x)); lens.y = Math.max(0, Math.min(H, lens.y)); drawLens();
+  });
+}
+
+/* =========================================================
+   2. GROWTH SCRUBBER
+   ========================================================= */
+let t = N - 1, playing = false, raf = 0;
+function drawGrow() {
+  const c = $("growCanvas"); const { g, w, h } = fit(c);
+  const a = Math.floor(t), b = Math.min(N - 1, a + 1), f = t - a;
+  g.globalAlpha = 1; g.drawImage(imgs[a], 0, 0, w, h);
+  if (f > 0) { g.globalAlpha = f; g.drawImage(imgs[b], 0, 0, w, h); }
+  g.globalAlpha = 1; g.drawImage(overlay(-1, a, 200), 0, 0, w, h);
+  if (f > 0 && b > a) { g.globalAlpha = f; g.drawImage(overlay(a, b, 200), 0, 0, w, h); g.globalAlpha = 1; }
+  const k = Math.round(t), year = YEARS[k];
+  $("growYear").textContent = year; $("growDate").textContent = "Frame " + D.frames[k].date;
+  const share = newShareBy[a] + (newShareBy[b] - newShareBy[a]) * f;
+  $("gkRoof").textContent = fmt(share * 100, 1) + "%";
+  $("gkRain").textContent = fmt(D.dryRain[year] ?? 0) + " mm";
+  const rains = YEARS.map(y => D.dryRain[y]);
+  const rmin = Math.min(...rains), rmax = Math.max(...rains);
+  const r = D.dryRain[year];
+  $("growSay").textContent = k === 0
+    ? "2018 is the baseline. Nothing is orange yet."
+    : `${year}: ${r === rmax ? "the wettest" : r === rmin ? "the driest" : "a middling"} dry season in the record (${fmt(r)} mm), and ${fmt(share * 100, 1)}% of the land has turned to roofs or cleared plots since 2018.`;
+  const pct = t / (N - 1) * 100;
+  $("head").style.left = `calc(${(t + .5) / N * 100}%)`; $("tag").style.left = `calc(${(t + .5) / N * 100}%)`; $("tag").textContent = year;
+  $("film").setAttribute("aria-valuenow", year);
+  drawLanes();
+}
+function drawLanes() {
+  const lane = (svg, vals, kind, color, max) => {
+    const r = svg.getBoundingClientRect(), w = r.width, h = 46, n = vals.length, cw = w / n;
+    let s = `<line x1="0" x2="${w}" y1="${h - .5}" y2="${h - .5}" stroke="var(--border)"/>`;
+    const k = Math.round(t);
+    if (kind === "bar") vals.forEach((v, i) => {
+      const bh = Math.max(1, v / max * (h - 8)), x = i * cw + cw * .3, bw = cw * .4;
+      s += `<rect x="${x}" y="${h - bh}" width="${bw}" height="${bh}" rx="3" fill="${color}" opacity="${i === k ? 1 : .45}"><title>${YEARS[i]}: ${fmt(v)} mm</title></rect>`;
+      if (i === k) s += `<text x="${x + bw / 2}" y="${h - bh - 4}" text-anchor="middle" font-size="11" fill="var(--fg)" font-weight="600">${fmt(v)}</text>`;
+    });
+    else {
+      const pts = vals.map((v, i) => [i * cw + cw / 2, h - 4 - v / max * (h - 12)]);
+      s += `<path d="M${pts[0][0]},${h} ${pts.map(p => `L${p[0]},${p[1]}`).join(" ")} L${pts[n - 1][0]},${h}Z" fill="${color}" opacity=".12"/>`;
+      s += `<polyline points="${pts.map(p => p.join(",")).join(" ")}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/>`;
+      const p = pts[k]; s += `<circle cx="${p[0]}" cy="${p[1]}" r="4.5" fill="${color}" stroke="var(--card)" stroke-width="2"/><text x="${p[0]}" y="${p[1] - 9}" text-anchor="middle" font-size="11" fill="var(--fg)" font-weight="600">${fmt(vals[k], 1)}%</text>`;
+    }
+    svg.setAttribute("viewBox", `0 0 ${w} ${h}`); svg.innerHTML = s;
+  };
+  lane($("laneRoof"), newShareBy.map(v => v * 100), "line", css("--roof"), Math.max(...newShareBy) * 100 * 1.15);
+  lane($("laneRain"), YEARS.map(y => D.dryRain[y]), "bar", css("--water"), Math.max(...YEARS.map(y => D.dryRain[y])));
+}
+function setT(v) { t = Math.max(0, Math.min(N - 1, v)); drawGrow(); }
+function play() {
+  if (playing) { playing = false; cancelAnimationFrame(raf); setIcon(); return; }
+  playing = true; setIcon(); if (t >= N - 1) t = 0;
+  let last = performance.now();
+  const step = now => { if (!playing) return; t += (now - last) / 1000 * (N - 1) / 6; last = now; if (t >= N - 1) { t = N - 1; playing = false; setIcon(); } drawGrow(); if (playing) raf = requestAnimationFrame(step); };
+  if (reduced) { playing = false; setT(N - 1); return; }
+  raf = requestAnimationFrame(step);
+}
+function setIcon() { $("playIcon").innerHTML = playing ? '<path d="M7 5h4v14H7zM13 5h4v14h-4z" fill="currentColor"/>' : '<path d="M7 5v14l12-7z" fill="currentColor"/>'; $("growPlay").setAttribute("aria-label", playing ? "Pause" : "Play through the years"); }
+function initGrow() {
+  $("strip").style.gridTemplateColumns = `repeat(${N}, 1fr)`; $("ticks").style.gridTemplateColumns = `repeat(${N}, 1fr)`;
+  $("strip").innerHTML = D.frames.map(f => `<img src="${f.img}" alt="">`).join("");
+  $("ticks").innerHTML = YEARS.map(y => `<span>${y}</span>`).join("");
+  const film = $("film");
+  const at = e => { const r = film.getBoundingClientRect(); return (e.clientX - r.left) / r.width * N - .5; };
+  film.addEventListener("pointerdown", e => { film.setPointerCapture(e.pointerId); playing = false; setIcon(); setT(at(e)); });
+  film.addEventListener("pointermove", e => { if (film.hasPointerCapture(e.pointerId)) setT(at(e)); });
+  film.addEventListener("pointerup", () => setT(Math.round(t)));
+  film.addEventListener("keydown", e => { if (e.key === "ArrowRight") setT(Math.round(t) + 1); else if (e.key === "ArrowLeft") setT(Math.round(t) - 1); else return; e.preventDefault(); });
+  $("growPlay").addEventListener("click", play);
+}
+
+/* =========================================================
+   3. SPOT STORY
+   ========================================================= */
+const TS = 24; // tile size in image px, about 280 m
+const story = { tx: 0, ty: 0, hover: null, scores: null };
+function tileScores() {
+  const cols = Math.floor(W / TS), rows = Math.floor(H / TS), s = [];
+  for (let ty = 0; ty < rows; ty++) for (let tx = 0; tx < cols; tx++) {
+    let land = 0, nw = 0;
+    for (let y = ty * TS; y < ty * TS + TS; y++) for (let x = tx * TS; x < tx * TS + TS; x++) { const i = y * W + x; if (isLand(i)) { land++; if (code[i] < 254) nw++; } }
+    s.push({ tx, ty, share: land > TS * TS * .6 ? nw / land : 0 });
+  }
+  return { cols, rows, s };
+}
+function drawStory() {
+  const c = $("storyCanvas"); const { g, w, h, sx, sy } = fit(c);
+  g.drawImage(imgs[N - 1], 0, 0, w, h);
+  const max = Math.max(...story.scores.s.map(t => t.share));
+  for (const t of story.scores.s) if (t.share > .12) { g.fillStyle = `rgba(240,130,50,${.08 + .32 * t.share / max})`; g.fillRect(t.tx * TS * sx + 1, t.ty * TS * sy + 1, TS * sx - 2, TS * sy - 2); }
+  const box = (tx, ty, color, lw, dash) => { g.setLineDash(dash || []); g.lineWidth = lw; g.strokeStyle = color; g.strokeRect(tx * TS * sx + lw / 2, ty * TS * sy + lw / 2, TS * sx - lw, TS * sy - lw); g.setLineDash([]); };
+  const scale = w / c.getBoundingClientRect().width;
+  if (story.hover && (story.hover.tx !== story.tx || story.hover.ty !== story.ty)) box(story.hover.tx, story.hover.ty, "rgba(255,255,255,.85)", 1.5 * scale, [4 * scale, 3 * scale]);
+  g.shadowColor = "rgba(0,0,0,.5)"; g.shadowBlur = 8; box(story.tx, story.ty, "#fff", 3 * scale); g.shadowBlur = 0;
+}
+function tileCanvas(k, size = 96) {
+  const c = document.createElement("canvas"); c.width = size; c.height = size;
+  const g = c.getContext("2d"); g.imageSmoothingEnabled = true; g.imageSmoothingQuality = "high";
+  g.drawImage(imgs[k], story.tx * TS, story.ty * TS, TS, TS, 0, 0, size, size); return c;
+}
+function selectTile(tx, ty) {
+  story.tx = tx; story.ty = ty; drawStory();
+  const inTile = (x, y) => x >= tx * TS && x < tx * TS + TS && y >= ty * TS && y < ty * TS + TS;
+  const st = YEARS.map((_, k) => regionStats(k, inTile));
+  $("tiles").innerHTML = "";
+  YEARS.forEach((y, k) => { const d = document.createElement("div"); d.className = "tile"; const c = tileCanvas(k); c.setAttribute("aria-label", `${y} tile`); c.setAttribute("role", "img"); d.append(c); const s = document.createElement("span"); s.textContent = `${y}`; d.append(s); $("tiles").append(d); });
+  // spark
+  const svg = $("spark"), r = svg.getBoundingClientRect(), w = r.width || 300, h = 56;
+  const line = (vals, color) => { const pts = vals.map((v, i) => [8 + i * (w - 16) / (N - 1), h - 6 - v * (h - 14)]); return `<polyline points="${pts.map(p => p.join(",")).join(" ")}" fill="none" stroke="${color}" stroke-width="2" stroke-linejoin="round"/>` + pts.map(p => `<circle cx="${p[0]}" cy="${p[1]}" r="2.5" fill="${color}"/>`).join(""); };
+  svg.setAttribute("viewBox", `0 0 ${w} ${h}`);
+  const cum = YEARS.map((_, k) => builtShare(inTile, -1, k));
+  svg.innerHTML = `<line x1="0" x2="${w}" y1="${h - 6}" y2="${h - 6}" stroke="var(--border)"/>` + line(st.map(s => s.green), css("--up")) + line(cum, css("--roof"));
+  // the measured sentence, from confirmed change only
+  const b = cum[N - 1];
+  let jump = 0, jy = YEARS[2];
+  for (let k = 1; k < N; k++) { const dd = cum[k] - cum[k - 1]; if (dd > jump) { jump = dd; jy = YEARS[k]; } }
+  const center = { lon: D.bbox[0] + (tx + .5) * TS / W * (D.bbox[2] - D.bbox[0]), lat: D.bbox[3] - (ty + .5) * TS / H * (D.bbox[3] - D.bbox[1]) };
+  $("storyWhere").textContent = `A 280 m patch at ${center.lat.toFixed(4)}, ${center.lon.toFixed(4)}, every year since 2018.`;
+  $("storyRule").textContent = b > .05
+    ? `${fmt(b * 100)}% of this patch turned into roofs or cleared ground after 2019, most of it in ${jy}.`
+    : `Almost no lasting new roofs or cleared ground here since 2019. Green swings from year to year with the rain.`;
+  $("storyAiBox").hidden = true; $("storyAi").textContent = "";
+}
+async function askStory() {
+  const sample = await sampleP; if (!sample) return;
+  const limits = await sample.limits?.().catch(() => null);
+  if (limits && !limits.images) { $("storyNote").textContent = "This view cannot send images to Claude."; return; }
+  // one contact sheet, three by three, labelled
+  const S = 160, c = document.createElement("canvas"); c.width = S * 3; c.height = S * 3;
+  const g = c.getContext("2d");
+  YEARS.forEach((y, k) => { const x = (k % 3) * S, yy = Math.floor(k / 3) * S; g.drawImage(tileCanvas(k, S), x, yy); g.fillStyle = "rgba(0,0,0,.65)"; g.fillRect(x, yy, 54, 22); g.fillStyle = "#fff"; g.font = "600 14px sans-serif"; g.fillText(String(y), x + 8, yy + 16); });
+  const blob = await new Promise(r => c.toBlob(r, "image/png"));
+  $("storyAsk").disabled = true; $("storyAiBox").hidden = false; $("storyAi").textContent = "Looking at the tiles…";
+  try {
+    const res = await sample(`These are nine Sentinel-2 true-colour tiles of the same 280 m patch on the Bukit peninsula, Bali, one per dry season from 2018 (top left) to 2026 (bottom right), 10 m pixels. Measured from the pixels: roofs or bare ground ${$("storyRule").textContent}
+In at most two plain sentences, say what changed on the ground and roughly when. Only describe what 10 m imagery can show (vegetation, cleared land, clusters of buildings, roads, large pools or water). Do not guess individual buildings, owners or uses. If clouds or haze affect a tile, say so.`, { images: [blob], modelTier: "default", onText: ({ text }) => { $("storyAi").textContent = text; } });
+    $("storyAi").textContent = res.text;
+  } catch (e) {
+    $("storyAi").textContent = e?.code === "not_granted" ? "Claude access was declined for this page." : `Claude could not answer: ${e?.message || "unknown error"}`;
+  } finally { $("storyAsk").disabled = false; }
+}
+function initStory() {
+  story.scores = tileScores();
+  const best = story.scores.s.reduce((a, b) => (b.share > a.share ? b : a));
+  story.tx = best.tx; story.ty = best.ty;
+  const st = $("storyStage");
+  const tileAt = e => { const p = toImg(e, st); return { tx: Math.min(story.scores.cols - 1, Math.max(0, Math.floor(p.x / TS))), ty: Math.min(story.scores.rows - 1, Math.max(0, Math.floor(p.y / TS))) }; };
+  st.addEventListener("pointermove", e => { story.hover = tileAt(e); drawStory(); });
+  st.addEventListener("pointerleave", () => { story.hover = null; drawStory(); });
+  st.addEventListener("click", e => { const t = tileAt(e); selectTile(t.tx, t.ty); });
+  st.addEventListener("keydown", e => {
+    const m = { ArrowLeft: [-1, 0], ArrowRight: [1, 0], ArrowUp: [0, -1], ArrowDown: [0, 1] }[e.key]; if (!m) return; e.preventDefault();
+    selectTile(Math.max(0, Math.min(story.scores.cols - 1, story.tx + m[0])), Math.max(0, Math.min(story.scores.rows - 1, story.ty + m[1])));
+  });
+  $("storyAsk").addEventListener("click", askStory);
+  selectTile(story.tx, story.ty);
+}
+
+/* ---------- Claude (claude.ai runtime only) ---------- */
+const sampleP = window.claude?.use ? window.claude.use("sample").catch(() => null) : Promise.resolve(null);
+sampleP.then(s => { if (!s) { $("storyAsk").disabled = true; $("storyNote").textContent = "Claude runs when this page is opened on claude.ai. The measured sentence above works everywhere."; } });
+
+/* ---------- tabs, boot ---------- */
+const CONCEPTS = ["lens", "growth", "story"];
+function show(c) {
+  if (!CONCEPTS.includes(c)) c = "lens";
+  CONCEPTS.forEach(x => { $("c-" + x).hidden = x !== c; $("tab-" + x).setAttribute("aria-selected", x === c); });
+  if (location.hash !== "#" + c) history.replaceState(null, "", "#" + c);
+  redraw(c);
+}
+function redraw(c = location.hash.slice(1) || "lens") { if (!imgs.length) return; if (c === "lens") drawLens(); else if (c === "growth") drawGrow(); else drawStory(); }
+document.querySelectorAll(".tabs button").forEach(b => b.addEventListener("click", () => show(b.dataset.c)));
+addEventListener("hashchange", () => show(location.hash.slice(1)));
+addEventListener("resize", () => redraw());
+document.addEventListener("keydown", e => { if (/^[123]$/.test(e.key) && !/input|textarea/i.test(e.target.tagName)) show(CONCEPTS[+e.key - 1]); });
+
+loadAll().then(() => {
+  // start the lens on the patch that changed most, set to 2018
+  const sc = tileScores(); const best = sc.s.reduce((a, b) => (b.share > a.share ? b : a));
+  lens.x = (best.tx + .5) * TS; lens.y = (best.ty + .5) * TS;
+  initLens(); initGrow(); initStory();
+  setLensYear(0);
+  show(location.hash.slice(1) || "lens");
+});
+})();
+</script>

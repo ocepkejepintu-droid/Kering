@@ -1,0 +1,11 @@
+[Unit]
+Description=Weekly rain refresh for Ask Kering
+
+[Timer]
+# Mondays 07:23 server time. ERA5 on Open-Meteo lags about five days, so weekly is as fresh as it gets.
+OnCalendar=Mon *-*-* 07:23:00
+RandomizedDelaySec=15m
+Persistent=true
+
+[Install]
+WantedBy=timers.target

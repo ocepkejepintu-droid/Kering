@@ -1,0 +1,81 @@
+{
+ "area": "jimbaran",
+ "method": "Claude looked at the building's crop in every sharp capture",
+ "labels": [
+  {
+   "index": 1645,
+   "first": "there_by",
+   "note": "red-brown roof in 2015, rebuilt with orange roof 2024"
+  },
+  {
+   "index": 4081,
+   "first": "there_by",
+   "note": "roof in its outline in 2015"
+  },
+  {
+   "index": 5183,
+   "first": "there_by",
+   "note": "dense old roofs, roof in 2015"
+  },
+  {
+   "index": 6168,
+   "first": "2018-04-06",
+   "note": "ground/vegetation 2017, orange roof 2018"
+  },
+  {
+   "index": 6183,
+   "first": "there_by",
+   "note": "dark roof already in 2015"
+  },
+  {
+   "index": 10085,
+   "first": "there_by",
+   "note": "roof in 2015"
+  },
+  {
+   "index": 16133,
+   "first": "2024-09-27",
+   "note": "yard/trees until 2023, white roof from 2024-09"
+  },
+  {
+   "index": 16622,
+   "first": "there_by",
+   "note": "roof in 2009 grey and 2015"
+  },
+  {
+   "index": 19053,
+   "first": "none",
+   "note": "empty walled plot (grass, ground, a pale surface 2022, grass 2026)"
+  },
+  {
+   "index": 19761,
+   "first": "2022-03-24",
+   "note": "open ground to 2020, dark roof 2022"
+  },
+  {
+   "index": 20869,
+   "first": "there_by",
+   "note": "light grey roof in 2015"
+  },
+  {
+   "index": 21593,
+   "first": "there_by",
+   "note": "dense old roofs, roof in 2015"
+  },
+  {
+   "index": 22527,
+   "first": "2023-10-17",
+   "note": "trees then cleared plot, roof first in 2023-10"
+  },
+  {
+   "index": 23417,
+   "first": "there_by",
+   "note": "brown roof already in 2014"
+  },
+  {
+   "index": 26511,
+   "first": "there_by",
+   "note": "dark roof already in 2014"
+  }
+ ]
+}

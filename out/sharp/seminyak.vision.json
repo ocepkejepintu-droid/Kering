@@ -1,0 +1,111 @@
+{
+ "area": "seminyak",
+ "method": "Claude looked at the building's crop in every sharp capture",
+ "labels": [
+  {
+   "index": 26959,
+   "first": "2017-09-09",
+   "note": "open ground strip in 2015, flat roof deck from 2017"
+  },
+  {
+   "index": 38641,
+   "first": "there_by",
+   "note": "long grey roof already in 2014"
+  },
+  {
+   "index": 264,
+   "first": "there_by",
+   "note": "roof in 2015"
+  },
+  {
+   "index": 20392,
+   "first": "there_by",
+   "note": "narrow dark roof in 2015"
+  },
+  {
+   "index": 25523,
+   "first": "there_by",
+   "note": "brown roof in 2015"
+  },
+  {
+   "index": 19085,
+   "first": "there_by",
+   "note": "rooftop structure in 2015"
+  },
+  {
+   "index": 11379,
+   "first": "there_by",
+   "note": "villa roof already in 2015"
+  },
+  {
+   "index": 17156,
+   "first": "there_by",
+   "note": "brown roof in 2015"
+  },
+  {
+   "index": 25746,
+   "first": "there_by",
+   "note": "roof in 2015"
+  },
+  {
+   "index": 16249,
+   "first": "there_by",
+   "note": "grey roof in 2015"
+  },
+  {
+   "index": 12670,
+   "first": "there_by",
+   "note": "light roof in 2015"
+  },
+  {
+   "index": 34596,
+   "first": "there_by",
+   "note": "row of grey roofs in 2014"
+  },
+  {
+   "index": 24797,
+   "first": "there_by",
+   "note": "grey roof in 2015"
+  },
+  {
+   "index": 32551,
+   "first": "there_by",
+   "note": "L-shaped roof in 2014"
+  },
+  {
+   "index": 6729,
+   "first": "there_by",
+   "note": "grey roof in 2015"
+  },
+  {
+   "index": 34923,
+   "first": "there_by",
+   "note": "grey roof in 2014, re-roofed orange 2023"
+  },
+  {
+   "index": 36302,
+   "first": "there_by",
+   "note": "flat roof in 2014"
+  },
+  {
+   "index": 10578,
+   "first": "there_by",
+   "note": "dark roof in 2015"
+  },
+  {
+   "index": 14212,
+   "first": "there_by",
+   "note": "small pale roof in 2015, rebuilt white 2022"
+  },
+  {
+   "index": 10212,
+   "first": "2017-09-09",
+   "note": "bare site 2015, grey roof 2017"
+  },
+  {
+   "index": 18490,
+   "first": "there_by",
+   "note": "grey roof in 2015"
+  }
+ ]
+}

@@ -1,0 +1,11 @@
+[
+  {"id": "pecatu", "label": "Pecatu and Ungasan", "region": "Bukit", "village": "Pecatu", "bbox": [115.095, -8.832, 115.145, -8.797]},
+  {"id": "uluwatu", "label": "Uluwatu and Bingin", "region": "Bukit", "village": "Pecatu", "bbox": [115.055, -8.835, 115.105, -8.800]},
+  {"id": "jimbaran", "label": "Jimbaran", "region": "Bukit", "village": "Jimbaran", "bbox": [115.145, -8.800, 115.195, -8.765]},
+  {"id": "canggu", "label": "Canggu and Tibubeneng", "region": "West coast", "village": "Canggu", "bbox": [115.125, -8.660, 115.175, -8.625]},
+  {"id": "pererenan", "label": "Pererenan and Munggu", "region": "West coast", "village": "Pererenan", "bbox": [115.085, -8.645, 115.135, -8.610]},
+  {"id": "kerobokan", "label": "Kerobokan and Umalas", "region": "West coast", "village": "Kerobokan Kelod", "bbox": [115.150, -8.675, 115.200, -8.640]},
+  {"id": "seminyak", "label": "Seminyak and Legian", "region": "West coast", "village": "Seminyak", "bbox": [115.150, -8.715, 115.200, -8.680]},
+  {"id": "ubud", "label": "Ubud and Penestanan", "region": "Inland", "village": "Ubud", "bbox": [115.235, -8.525, 115.285, -8.490]},
+  {"id": "lembongan", "label": "Nusa Lembongan", "region": "Islands", "village": "Jungutbatu", "bbox": [115.425, -8.700, 115.475, -8.665]}
+]

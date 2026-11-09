@@ -1,0 +1,10 @@
+site/
+kering-offline.html
+
+node_modules/
+__pycache__/
+*.pyc
+web/dist/
+worker/public/
+.wrangler/
+.DS_Store

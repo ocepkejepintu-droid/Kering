@@ -1,0 +1,45 @@
+ARTESIS official sources (Badan Geologi / ESDM)
+Retrieved 2026-11-09. These layers are not published as ArcGIS REST or GeoServer WMS/WFS.
+
+Map
+  https://geologi.esdm.go.id/artesis
+
+KBAK (Kawasan Bentang Alam Karst)
+  Layer service (PMTiles, source-layer "kbak"):
+    https://geologi.esdm.go.id/artesis/tiles/kbak.pmtiles
+  Alternate path used by the map config:
+    https://geologi.esdm.go.id/artesis/maplibre/tiles/kbak.pmtiles
+  Thematic catalog index:
+    https://geologi.esdm.go.id/artesis/katalog-data-dan-peta-tematik/peta-tematik
+  There is no KBAK-specific metadata page under peta-tematik/view/ (that index has CAT, konservasi, produktivitas, etc., but not KBAK).
+  Katalog Data has no Bali KBAK download package (only Sukolilo, Gunung Sewu, Gombong). Page:
+    https://geologi.esdm.go.id/artesis/katalog-data-dan-peta-tematik/katalog-data
+  Official attributes on the polygons include NAMOBJ, KLSKBAK, REMARK, SKKBAK ("Permen ESDM No. 17 Tahun 2012"), DATSTR (Badung 2017-07-10, Nusa Penida 2017-04-18), SPATIAL_RE 4326.
+
+SIPA / Peta Perizinan Air Tanah
+  Layer service (JSON API used by the map for neraca/permits):
+    https://geologi.esdm.go.id/artesis/api/map/get-arena-pag-bkat-neraca
+  Dated permit API also in the map config:
+    https://geologi.esdm.go.id/artesis/api/map/get-arena-pag-bkat/{start}/{end}
+  Counts API:
+    https://geologi.esdm.go.id/artesis/api/map/get-arena-counts/{start}/{end}
+  Perizinan page:
+    https://geologi.esdm.go.id/artesis/perizinan
+  No SIPA/permit package for Provinsi Bali in Katalog Data.
+  Identify API https://geologi.esdm.go.id/artesis/api/map/identify returned 404.
+
+Neraca Air Tanah (computed in the map client, not a single downloadable layer)
+  Safe-yield table:
+    https://geologi.esdm.go.id/artesis/maplibre/asset/doc/Potensi_Air_Tanah.csv
+  CAT polygons:
+    https://geologi.esdm.go.id/artesis/maplibre/asset/json/CAT.json
+    Catalog metadata page: https://geologi.esdm.go.id/artesis/katalog-data-dan-peta-tematik/peta-tematik/view/cat
+  Domestic-use estimates:
+    https://geologi.esdm.go.id/artesis/maplibre/asset/json/at_domestik_per_cat.json
+  Licensed wells used in the balance: the SIPA neraca API above.
+  Thresholds in the app config: Aman <60%, Waspada 60–80%, Siaga 80–100%, Negatif >=100%.
+  Data year: not published on the neraca layer itself. A SIPA dashboard stamp of 2026-07-30 04:30:08 was seen in the API-adjacent UI, not yet confirmed from the on-map legend.
+
+Extracts in this folder
+  sipa_bali.geojson — 3,569 points, CRS WGS84 (EPSG:4326 / CRS84), bbox lon 114.4–115.8, lat -8.9–-8.0, all labeled provinsi=Bali. All API fields kept. 21 rows share a nomor_sumur+coordinate+kabupaten+cat key.
+  kbak_bali.geojson — official KBAK_Badung and KBAK_Nusapenida polygons only, same CRS, official attributes kept. One Badung polygon (KLSKBAK=1). Nusa Penida has class 1 (limestone distribution) and class 2 (investigation delineation) as separate features. KBAK_Buleleng exists in the national tiles but was omitted because this file is limited to Badung and Nusa Penida.

@@ -1,0 +1,20 @@
+name = "kering"
+main = "src/index.ts"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+# The page (built by `npm run build:page`) is served as a static asset. Requests under
+# /api/ go to the Worker first.
+[assets]
+directory = "./public"
+binding = "ASSETS"
+run_worker_first = ["/api/*"]
+
+[vars]
+MODEL = "claude-opus-5-5"
+# Add the staging mirror here if it should call this Worker for Claude:
+ALLOWED_ORIGINS = "http://43.163.0.197"
+
+# Secrets, set once with:
+#   npx wrangler secret put ANTHROPIC_API_KEY
+#   npx wrangler secret put EVENT_CODE
