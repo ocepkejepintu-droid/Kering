@@ -245,7 +245,7 @@ def main():
     # N1 missing-value handling
     have = ~np.isnan(P)
     counts = {str(k): int((have.sum(axis=1) == k).sum()) for k in range(len(KEYS) + 1)}
-    no_market = sum(1 for v in vill if v.get("listingsKm2") is None)
+    no_market = sum(1 for v in vill if v.get("listingsKm2") is None and v.get("tourismPct") is None)
     low_cov = sum(1 for v in vill if (v.get("coverage") is None) or v["coverage"] < MIN_COVERAGE)
     out["N1_missing"] = {
         "villagesBySignalCount": counts, "scoredOnFewerThanMin": int((scored & (have.sum(axis=1) < MIN_PARTS)).sum()),

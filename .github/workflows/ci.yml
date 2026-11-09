@@ -26,4 +26,7 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install numpy
-      - run: python3 scripts/validate.py
+      - name: Score validation (fails on a FAIL verdict)
+        run: |
+          python3 scripts/validate.py
+          python3 -c "import json,sys; v=json.load(open('out/validation.json'))['verdict']; print('verdict', v); sys.exit(v == 'FAIL')"

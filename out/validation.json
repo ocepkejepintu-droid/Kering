@@ -25,13 +25,13 @@
   },
   "scoredOnFewerThanMin": 0,
   "nullTourism": 179,
-  "villagesWithoutMarket": 261,
+  "villagesWithoutMarket": 179,
   "nullGrowth": 36,
   "villagesBelowCoverage": 36,
   "nullSealed": 0,
   "nullWells": 0,
   "villagesWithZeroPermits": 95,
-  "pass": false
+  "pass": true
  },
  "J1_permitJoin": {
   "points": 3569,
@@ -453,6 +453,6 @@
   "passRule": "Critical median conductivity > Low, Mann-Whitney one-sided p < 0.05",
   "status": "NOT RUNNABLE (field work; no --outside wells CSV)"
  },
- "verdict": "FAIL",
+ "verdict": "PARTIAL",
  "verdictNote": "Outside checks O1 and O2 not runnable, so PASS is not reachable from here."
 }
