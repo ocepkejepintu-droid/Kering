@@ -137,23 +137,26 @@ export function SatelliteView() {
     <>
       <ViewHeader
         title="Satellite record"
-        subtitle={useSharp
+        subtitle={<>
+          <span className="sm:hidden">{`${spot.label} · ${fmt(set.total)} buildings`}</span>
+          <span className="max-sm:hidden">{useSharp
           ? `${spot.label} · ${captures.length} sharp captures ${timeline.years?.[0]}–${timeline.years?.[1]} (Maxar, about 0.3–0.5 m)${timeline.tail ? ` + Sentinel-2 ${timeline.tail} at 10 m` : ""} · ${fmt(set.total)} mapped buildings`
-          : `${spot.label} · Sentinel-2 dry seasons ${spot.frames[0].year}–${spot.frames[last].year} · ${fmt(set.total)} mapped buildings`}
+          : `${spot.label} · Sentinel-2 dry seasons ${spot.frames[0].year}–${spot.frames[last].year} · ${fmt(set.total)} mapped buildings`}</span>
+        </>}
         actions={
           <>
             <ToggleGroup type="single" variant="outline" size="sm" value={useSharp ? "sharp" : "sentinel"} onValueChange={(s) => s && switchSource(s as Source)} aria-label="Imagery">
               <ToggleGroupItem value="sharp" className="px-3" disabled={sharpOk === false} title={sharpOk === false ? "Sharp imagery streams from Esri and is blocked here. Use the hosted site." : "Maxar via Esri Wayback, about 0.3–0.5 m"}>
                 {sharpOk === null ? <Loader2 className="size-3.5 animate-spin" /> : null}Sharp
               </ToggleGroupItem>
-              <ToggleGroupItem value="sentinel" className="px-3">Sentinel-2</ToggleGroupItem>
+              <ToggleGroupItem value="sentinel" className="px-3" aria-label="Sentinel-2"><span className="sm:hidden">10 m</span><span className="max-sm:hidden">Sentinel-2</span></ToggleGroupItem>
             </ToggleGroup>
             <ToggleGroup type="single" variant="outline" size="sm" value={mode} onValueChange={(m) => m && switchMode(m as Mode)} aria-label="View">
-              <ToggleGroupItem value="lens" className="px-3">Time lens</ToggleGroupItem>
-              <ToggleGroupItem value="frame" className="px-3">Whole frame</ToggleGroupItem>
+              <ToggleGroupItem value="lens" className="px-3" aria-label="Time lens"><span className="sm:hidden">Lens</span><span className="max-sm:hidden">Time lens</span></ToggleGroupItem>
+              <ToggleGroupItem value="frame" className="px-3" aria-label="Whole frame"><span className="sm:hidden">Frame</span><span className="max-sm:hidden">Whole frame</span></ToggleGroupItem>
             </ToggleGroup>
             <Select value={pending ?? spot.id} onValueChange={switchSpot}>
-              <SelectTrigger size="sm" className="w-[210px]" aria-label="Area">
+              <SelectTrigger size="sm" className="w-[210px] max-sm:order-first max-sm:w-full" aria-label="Area">
                 {pending ? <span className="flex items-center gap-2"><Loader2 className="size-3.5 animate-spin" />{SPOTS.find((s) => s.id === pending)?.label}</span> : <SelectValue />}
               </SelectTrigger>
               <SelectContent align="end">
@@ -169,10 +172,10 @@ export function SatelliteView() {
         }
       />
       <div className="min-h-0 flex-1 overflow-y-auto xl:overflow-hidden">
-        <div className="mx-auto grid max-w-[1560px] gap-4 p-4 sm:p-5 grid-cols-[minmax(0,1fr)] xl:h-full xl:grid-cols-[minmax(0,1fr)_340px]">
+        <div className="mx-auto grid max-w-[1560px] gap-3 p-3 sm:gap-4 sm:p-5 grid-cols-[minmax(0,1fr)] xl:h-full xl:grid-cols-[minmax(0,1fr)_340px]">
           <div className="flex min-h-0 min-w-0 flex-col gap-3">
             {loadError && <div role="alert" className="rounded-lg border border-dashed px-4 py-3 text-sm text-muted-foreground">{loadError}</div>}
-            <Card className="relative h-[58dvh] min-h-[320px] p-1.5 shadow-none xl:h-auto xl:flex-1">
+            <Card className="relative h-[58dvh] min-h-[320px] p-1.5 shadow-none max-sm:-mx-3 max-sm:-mt-3 max-sm:h-[62dvh] max-sm:rounded-none max-sm:border-x-0 max-sm:border-t-0 max-sm:p-0 xl:h-auto xl:flex-1">
               <TimeLens key={spot.id} spot={spot} set={set} t={Math.min(t, nSteps - 1)} mode={mode} onStats={onStats} steps={timeline.steps} nowRid={timeline.nowRid} nowDate={timeline.nowDate} nowLabel={timeline.nowLabel} readyRef={readyRef} />
               {pending && (
                 <div className="absolute inset-1.5 z-30 grid place-items-center rounded-lg bg-background/70 backdrop-blur-sm">

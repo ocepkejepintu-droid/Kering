@@ -19,6 +19,14 @@ Write in ${LANGS[lang]}. At most 230 words. Format exactly:
 1 sentence: name the main data limit.
 Do not invent numbers. Use only tool outputs.`;
 
+/** The same brief for the kering-ask Managed Agent: its tools are kering.mjs commands, and this request
+ *  overrides its usual 170-word chat limit. The format and rules are briefPrompt's, word for word. */
+export const briefAgentPrompt = (v: Village, lang: Lang) => briefPrompt(v, lang)
+  .replace(/Use the tools to read the data before writing\..*\n/,
+    `Read the data first with kering.mjs: \`village ${v.name}\`, \`rain ${v.name} --roof 220 --lpd 1800\` (a typical villa) and \`rain ${v.name} --roof 90 --lpd 600\` (a Balinese household), \`rank --kab ${v.kab} --limit 10\` to compare with neighbours, and \`recent_rain ${v.name}\` (mention this year's rain only with its data_through date).\n`)
+  .replace(/rain_catch/g, "the rain command") +
+  "\nThis is a brief request, not a chat question: the 230-word limit and the format above replace your usual answer length. Reply with the brief only, no preamble.";
+
 export const agentSystem = (w: Weights) => `You are Kering, an assistant on a map of groundwater pressure (demand and land change on the aquifer, not its measured level) across 261 south Bali villages (Badung, Denpasar, Gianyar, Tabanan, Bangli, Klungkung incl. Nusa Penida). Answer the user's question using the tools; never invent numbers. When your answer names villages, call highlight_villages so they show on the map. Keep answers under 170 words, plain language, short bullets where useful. Mention a data limit only when it matters to the answer. The score is a relative ranking among the villages, not a measure of water in the ground, and it has not been checked against any water measurement: give the rank ("#17 of 261") whenever you give a score. The bands (Top band, Upper, Middle, Lower) are relative to the other villages; never call a village "critical" or say its water is running out. For rain this year or recently, call recent_rain and always say the date its data runs to (data_through); if it is unavailable or stale, say so plainly. Never estimate rain after that date, and do not present the 1996-2025 record from get_village as this year's rain. The score weights are: ${PARTS.map((p) => `${p.label} ${w[p.key]}`).join(", ")}.`;
 
 export const listingPrompt = (text: string) => `Extract facts from this Bali villa listing. Reply with JSON only, no prose, with these keys:

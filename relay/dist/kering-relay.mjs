@@ -28168,14 +28168,15 @@ function allowedCommand(cmd) {
 function stepLabel(cmd) {
   const rest = cmd.trim().slice(PREFIX.length);
   const [op, ...args] = rest.split(" ");
-  const arg = args.filter((a) => !a.startsWith("--")).join(" ").replace(/["']/g, "").trim();
+  const flag = args.findIndex((a) => a.startsWith("--"));
+  const arg = (flag < 0 ? args : args.slice(0, flag)).join(" ").replace(/["']/g, "").trim();
   switch (op) {
     case "village":
       return `Reading ${arg || "a village"}`;
     case "rank":
       return "Ranking villages";
     case "rain":
-      return `Simulating rain catch in ${arg.split(" --")[0] || "a village"}`;
+      return `Simulating rain catch in ${arg || "a village"}`;
     case "recent_rain":
       return `Reading this year's rain for ${arg || "a village"}`;
     case "names":

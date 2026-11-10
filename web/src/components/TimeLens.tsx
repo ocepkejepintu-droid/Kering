@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
-import { Droplets, Eye, EyeOff, Minus, Plus, Scan, Signpost } from "lucide-react";
+import { Droplets, Eye, EyeOff, Keyboard, Minus, Plus, Scan, Signpost } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import type { SatSpot } from "@/lib/spots";
 import { describe, hotspot, inRect, stateAt, type BuildingSet } from "@/lib/buildings";
@@ -471,33 +471,35 @@ export function TimeLens({ spot, set, t, mode, onStats, steps, nowRid, nowDate, 
     <div ref={box} tabIndex={0} onKeyDown={onKey} onPointerDown={onDown} onPointerMove={onMove} onPointerUp={onUp} onPointerCancel={onUp}
       onDoubleClick={(e) => { const p = local(e); zoomAt(2, p.x, p.y); }}
       onPointerLeave={(e) => { if (e.pointerType === "mouse") { hover.current = null; rerender(); } }}
-      className="relative size-full cursor-crosshair touch-none select-none overflow-hidden rounded-lg bg-muted outline-none focus-visible:ring-2 focus-visible:ring-brand"
+      className="relative size-full cursor-crosshair touch-none select-none overflow-hidden rounded-lg bg-muted max-sm:rounded-none outline-none focus-visible:ring-2 focus-visible:ring-brand"
       role="img" aria-label={mode === "lens"
         ? `Satellite image of ${spot.label}. The lens shows ${steps[Math.min(steps.length - 1, Math.round(t))].label}; outside it is ${nowLabel}. Orange outlines are buildings first seen after the lens date.`
         : `Satellite image of ${spot.label} in ${steps[Math.min(steps.length - 1, Math.round(t))].label}, with buildings new by then filled orange.`}>
       <canvas ref={canvas} className="absolute inset-0 size-full" />
-      {(nowRid !== undefined || wellsOn || (names && streets.length > 0)) && <div className={`pointer-events-none absolute bottom-2 right-2 z-10 flex flex-col items-end rounded bg-black/55 px-1.5 py-0.5 text-right text-[10px] text-white/90 ${mode === "lens" ? "sm:bottom-10" : ""}`}>{nowRid !== undefined && <span>{mode === "frame" && steps[Math.min(steps.length - 1, Math.round(t))]?.rid === undefined ? "Imagery: Copernicus Sentinel-2, 10 m" : ATTRIBUTION}</span>}{names && streets.length > 0 && <span>Streets © OpenStreetMap</span>}{wellsOn && <span>{WELLS_ATTRIBUTION}</span>}</div>}
+      {(nowRid !== undefined || wellsOn || (names && streets.length > 0)) && <div className={`pointer-events-none absolute bottom-2 right-2 z-10 flex flex-col items-end rounded bg-black/55 px-1.5 py-0.5 text-right text-[10px] text-white/90 `}>
+        <span className="sm:hidden">{[nowRid !== undefined ? (mode === "frame" && steps[Math.min(steps.length - 1, Math.round(t))]?.rid === undefined ? "© Copernicus" : "© Esri, Maxar") : null, names && streets.length > 0 ? "OSM" : null, wellsOn ? "ARTESIS" : null].filter(Boolean).join(" · ")}</span>
+        <span className="contents max-sm:hidden">{nowRid !== undefined && <span>{mode === "frame" && steps[Math.min(steps.length - 1, Math.round(t))]?.rid === undefined ? "Imagery: Copernicus Sentinel-2, 10 m" : ATTRIBUTION}</span>}{names && streets.length > 0 && <span>Streets © OpenStreetMap</span>}{wellsOn && <span>{WELLS_ATTRIBUTION}</span>}</span></div>}
       <div ref={loadRef} hidden className="pointer-events-none absolute left-1/2 top-2 z-10 -translate-x-1/2 rounded-full bg-black/65 px-3 py-1 text-[11px] tabular-nums text-white backdrop-blur" />
       <div ref={tipRef} hidden className="pointer-events-none absolute z-20 w-[216px] rounded-lg border bg-popover px-3 py-2 text-xs text-popover-foreground shadow-[0_1px_2px_rgb(0_0_0/.05),0_8px_24px_rgb(0_0_0/.18)]" />
       {mode === "lens" && (
-        <div className={`absolute bottom-10 left-2 z-10 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-lg ${wellsOn ? "max-sm:bottom-[62px]" : ""} bg-black/65 px-2.5 py-1.5 text-[11px] text-white backdrop-blur`}
+        <div className="absolute bottom-10 left-2 z-10 flex flex-wrap items-center gap-x-3 gap-y-1.5 rounded-lg bg-black/65 px-2.5 py-1.5 text-[11px] text-white backdrop-blur max-sm:bottom-auto max-sm:top-2 max-sm:gap-x-1.5 max-sm:px-1.5 max-sm:py-1"
           onPointerDown={(e) => e.stopPropagation()} onPointerUp={(e) => e.stopPropagation()} onDoubleClick={(e) => e.stopPropagation()}>
           <span className="flex items-center gap-1">
-            <span className="mr-0.5 opacity-75">Magnify</span>
+            <span className="mr-0.5 opacity-75 max-sm:hidden">Magnify</span>
             {[1, 2, 3, 4, 6].map((m) => (
               <button key={m} type="button" onClick={() => setMag(m)} aria-pressed={Math.abs(mag - m) < 0.05}
                 className={`rounded px-1.5 py-0.5 tabular-nums ${Math.abs(mag - m) < 0.05 ? "bg-white text-neutral-900" : "hover:bg-white/15"}`}>{m}×</button>
             ))}
           </span>
           <span className="flex items-center gap-1">
-            <span className="mr-0.5 opacity-75">Lens</span>
+            <span className="mr-0.5 opacity-75 max-sm:hidden">Lens</span>
             <button type="button" aria-label="Smaller lens" onClick={() => setLensR(Math.max(70, radius() - 30))} className="rounded px-1.5 py-0.5 hover:bg-white/15">−</button>
             <button type="button" aria-label="Bigger lens" onClick={() => setLensR(Math.min(260, radius() + 30))} className="rounded px-1.5 py-0.5 hover:bg-white/15">+</button>
           </span>
         </div>
       )}
       {mode === "lens" && marks && (
-        <div className="pointer-events-none absolute left-2 top-2 z-10 space-y-1 rounded-lg bg-black/65 px-2.5 py-2 text-[11px] text-white backdrop-blur">
+        <div className="pointer-events-none absolute left-2 top-2 z-10 space-y-1 rounded-lg bg-black/65 px-2.5 py-2 text-[11px] text-white backdrop-blur max-sm:hidden">
           <div className="font-semibold">Inside the circle: {steps[Math.min(steps.length - 1, Math.round(t))].label}</div>
           <div className="flex items-center gap-2"><span className="inline-block size-3 rounded-[2px] border-[1.5px] border-dashed border-[#f08a3c] bg-[#f08a3c]/55" />Not built yet, here today</div>
           {set.captures ? (
@@ -511,9 +513,9 @@ export function TimeLens({ spot, set, t, mode, onStats, steps, nowRid, nowDate, 
       {mode === "lens" && <div ref={chipRef} hidden={!marks} className="pointer-events-none absolute z-10 -translate-x-1/2 whitespace-nowrap rounded-full bg-white/95 px-3 py-1 text-xs tabular-nums text-neutral-900 shadow-[0_1px_2px_rgb(0_0_0/.05),0_8px_24px_rgb(0_0_0/.18)]" />}
       <div className="absolute right-2 top-2 z-10 flex flex-col overflow-hidden rounded-lg border bg-card shadow-[0_1px_2px_rgb(0_0_0/.05)]"
         onPointerDown={(e) => e.stopPropagation()} onPointerUp={(e) => e.stopPropagation()} onDoubleClick={(e) => e.stopPropagation()}>
-        <Button variant="ghost" size="icon-sm" className="rounded-none" onClick={() => zoomAt(1.5)} aria-label="Zoom in"><Plus /></Button>
-        <Button variant="ghost" size="icon-sm" className="rounded-none border-t" onClick={() => zoomAt(1 / 1.5)} aria-label="Zoom out"><Minus /></Button>
-        {streets.length > 0 && <Button variant="ghost" size="icon-sm" className="rounded-none border-t" onClick={() => setNames((m) => !m)} aria-pressed={!names}
+        <Button variant="ghost" size="icon-sm" className="rounded-none max-sm:hidden" onClick={() => zoomAt(1.5)} aria-label="Zoom in"><Plus /></Button>
+        <Button variant="ghost" size="icon-sm" className="rounded-none border-t max-sm:hidden" onClick={() => zoomAt(1 / 1.5)} aria-label="Zoom out"><Minus /></Button>
+        {streets.length > 0 && <Button variant="ghost" size="icon-sm" className="rounded-none border-t max-sm:border-t-0" onClick={() => setNames((m) => !m)} aria-pressed={!names}
           aria-label={names ? "Hide street names (N)" : "Show street names (N)"} title={names ? "Hide street names (N)" : "Show street names (N)"}><Signpost className={names ? "" : "opacity-40"} /></Button>}
         <Button variant="ghost" size="icon-sm" className="rounded-none border-t" onClick={() => setMarks((m) => !m)} aria-pressed={!marks}
           aria-label={marks ? "Hide boxes (H)" : "Show boxes (H)"} title={marks ? "Hide boxes and labels (H)" : "Show boxes and labels (H)"}>{marks ? <EyeOff /> : <Eye />}</Button>
@@ -521,8 +523,10 @@ export function TimeLens({ spot, set, t, mode, onStats, steps, nowRid, nowDate, 
           aria-label={wellsOn ? "Hide licensed wells (W)" : "Show licensed wells (W)"} title={wellsOn ? "Hide licensed wells (W)" : `Show ${WELLS_LEGEND.toLowerCase()} (W)`}><Droplets /></Button>
         <Button variant="ghost" size="icon-sm" className="rounded-none border-t" onClick={() => { view.current = { x: W / 2, y: H / 2, z: 1 }; rerender(); }} aria-label="Show the whole frame"><Scan /></Button>
       </div>
-      <div className="pointer-events-none absolute bottom-2 left-2 z-10 rounded-md bg-black/65 px-2 py-1 text-[11px] text-white backdrop-blur max-sm:hidden">
-        {mode === "lens" ? "Click to pin · Space plays · [ ] year · H boxes · N streets · W wells · scroll zoom · Shift+scroll magnify · Alt+scroll lens size" : "Space plays · [ ] step · H boxes · N streets · W wells · drag to pan · scroll to zoom"} · {fmt(view.current.z, 1)}×
+      {/* shortcuts on hover, zoom level always: the full list along the bottom crowded the image */}
+      <div className="absolute bottom-2 left-2 z-10 flex items-center gap-1.5 rounded-md bg-black/65 px-2 py-1 text-[11px] tabular-nums text-white backdrop-blur max-sm:hidden"
+        title={(mode === "lens" ? "Click to pin · Space plays · [ ] year · H boxes · N streets · W wells · scroll zoom · Shift+scroll magnify · Alt+scroll lens size" : "Space plays · [ ] step · H boxes · N streets · W wells · drag to pan · scroll to zoom").split(" · ").join("\n")}>
+        <Keyboard className="size-3.5 opacity-80" aria-hidden="true" /><span className="sr-only">Keyboard shortcuts: {mode === "lens" ? "Click to pin · Space plays · [ ] year · H boxes · N streets · W wells · scroll zoom · Shift+scroll magnify · Alt+scroll lens size" : "Space plays · [ ] step · H boxes · N streets · W wells · drag to pan · scroll to zoom"}. Zoom </span>{fmt(view.current.z, 1)}×
       </div>
     </div>
   );

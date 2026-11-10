@@ -31,6 +31,8 @@ test("step labels", () => {
   assert.equal(stepLabel(P + "village Pecatu"), "Reading Pecatu");
   assert.equal(stepLabel(P + "recent_rain Pecatu"), "Reading this year's rain for Pecatu");
   assert.equal(stepLabel(P + "rank --kab Badung"), "Ranking villages");
+  assert.equal(stepLabel(P + "rain Pecatu --roof 220 --lpd 1800"), "Simulating rain catch in Pecatu");
+  assert.equal(stepLabel(P + 'village "Tanjung Benoa" --weights growth=25'), "Reading Tanjung Benoa");
 });
 
 test("weights: plain part names and 0-100 numbers only", () => {

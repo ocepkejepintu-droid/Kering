@@ -72,11 +72,11 @@ export function VillagesView() {
           </SelectContent>
         </Select>
         <ToggleGroup type="single" variant="outline" size="sm" value={band} onValueChange={(b) => b && setBand(b as typeof band)} aria-label="Band, relative to the other villages" className="overflow-x-auto">
-          <ToggleGroupItem value="all" className="px-3">All</ToggleGroupItem>
+          <ToggleGroupItem value="all" className="px-3 max-sm:px-2">All</ToggleGroupItem>
           {BANDS.map((b) => (
-            <ToggleGroupItem key={b.id} value={b.id} className="gap-1.5 px-3">
+            <ToggleGroupItem key={b.id} value={b.id} className="gap-1.5 px-3 max-sm:px-2">
               <span className="size-1.5 rounded-full" style={{ background: STRESS_VAR[b.id] }} aria-hidden="true" />
-              {b.label}<span className="tabular-nums text-muted-foreground">{counts[b.id]}</span>
+              {b.label}<span className="tabular-nums text-muted-foreground max-sm:hidden">{counts[b.id]}</span>
             </ToggleGroupItem>
           ))}
         </ToggleGroup>

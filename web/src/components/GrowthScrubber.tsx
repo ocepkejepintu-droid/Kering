@@ -64,7 +64,8 @@ export function GrowthScrubber({ steps, t, setT, playing, setPlaying, label, loo
     const r = film.current!.getBoundingClientRect();
     return Math.min(n - 1, Math.max(0, ((clientX - r.left) / r.width) * n - 0.5));
   };
-  const lanes = "grid grid-cols-[96px_minmax(0,1fr)] items-end gap-3 sm:grid-cols-[132px_minmax(0,1fr)]";
+  // phones: each lane's label sits above it, so the timeline gets the full width
+  const lanes = "grid grid-cols-1 gap-1 sm:grid-cols-[132px_minmax(0,1fr)] sm:items-end sm:gap-3";
 
   return (
     <div className="space-y-2">
@@ -79,7 +80,7 @@ export function GrowthScrubber({ steps, t, setT, playing, setPlaying, label, loo
       </div>
 
       <div className={lanes}>
-        <div className="pb-1 text-xs leading-tight text-muted-foreground">New buildings, total</div>
+        <div className="pb-1 text-xs leading-tight text-muted-foreground max-sm:pb-0 max-sm:text-[11px]">New buildings, total</div>
         <div className="relative h-12">
           <svg className="absolute inset-0 size-full overflow-visible" viewBox={`0 0 ${n * 10} 48`} preserveAspectRatio="none" role="img" aria-label="New buildings, total by date">
             <path d={`M5,48 ${cum.map((v, i) => `L${i * 10 + 5},${46 - (v / maxCum) * 38}`).join(" ")} L${(n - 1) * 10 + 5},48Z`} fill="#f08a3c" opacity={0.14} />
@@ -92,7 +93,7 @@ export function GrowthScrubber({ steps, t, setT, playing, setPlaying, label, loo
       </div>
 
       <div className={lanes}>
-        <div className="pb-1 text-xs leading-tight text-muted-foreground">Dry-season rain, mm</div>
+        <div className="pb-1 text-xs leading-tight text-muted-foreground max-sm:pb-0 max-sm:text-[11px]">Dry-season rain, mm</div>
         <div className="relative grid h-11 items-end" style={{ gridTemplateColumns: `repeat(${n}, 1fr)` }}>
           {rain.map((r, i) => (
             <div key={i} className="flex h-full flex-col items-center justify-end" title={steps[i].rain === null ? `${years[i]}: no rain record` : `${years[i]}: ${fmt(r)} mm`}>
@@ -104,7 +105,7 @@ export function GrowthScrubber({ steps, t, setT, playing, setPlaying, label, loo
       </div>
 
       <div className={lanes}>
-        <div className="pb-4 text-xs leading-tight text-muted-foreground">{label}</div>
+        <div className="pb-4 text-xs leading-tight text-muted-foreground max-sm:pb-0 max-sm:text-[11px]">{label}</div>
         <div>
           <div ref={film} role="slider" tabIndex={0} aria-label={label} aria-valuemin={0} aria-valuemax={n - 1} aria-valuenow={k} aria-valuetext={years[k]}
             className="relative h-14 cursor-ew-resize touch-none rounded-lg outline-none focus-visible:ring-2 focus-visible:ring-brand"
@@ -122,7 +123,7 @@ export function GrowthScrubber({ steps, t, setT, playing, setPlaying, label, loo
             <div className="pointer-events-none absolute -bottom-1 -top-1 w-[3px] -translate-x-1/2 rounded bg-brand shadow-[0_0_0_3px_var(--brand-soft)]" style={{ left: `${((t + 0.5) / n) * 100}%` }} />
           </div>
           <div className="mt-1 grid text-center text-[11px] tabular-nums text-muted-foreground" style={{ gridTemplateColumns: `repeat(${n}, 1fr)` }}>
-            {years.map((y, i) => <span key={steps[i].key} className={cn("truncate", i === k && "font-semibold text-foreground")}>{y}</span>)}
+            {years.map((y, i) => <span key={steps[i].key} className={cn("truncate", i === k && "font-semibold text-foreground")}>{n > 6 && /^\d{4}$/.test(y) ? <><span className="sm:hidden">’{y.slice(2)}</span><span className="max-sm:hidden">{y}</span></> : y}</span>)}
           </div>
         </div>
       </div>

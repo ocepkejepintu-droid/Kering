@@ -8,12 +8,12 @@ import { Tooltip, TooltipContent, TooltipTrigger } from "@/components/ui/tooltip
 import { Separator } from "@/components/ui/separator";
 import { useStore } from "@/lib/store";
 import { PARTS, RANK_NOTICE, bandOf, scoreText, type Scored } from "@/lib/score";
-import { BASIN_BALANCE, BUILT_YEARS, RAIN_YEARS, waterSources, type Village } from "@/lib/data";
+import { BASIN_BALANCE, BUILT_YEARS, findVillages, RAIN_YEARS, waterSources, type Village } from "@/lib/data";
 import { plan, trend } from "@/lib/rain";
 import { agentTools } from "@/lib/agent";
 import { waterSummary } from "@/lib/water-summary";
-import { briefPrompt, exampleBrief, LANGS, type Lang } from "@/lib/prompts";
-import { ARTIFACT_URL, errorMessage } from "@/lib/claude";
+import { briefAgentPrompt, briefPrompt, exampleBrief, LANGS, type Lang } from "@/lib/prompts";
+import { agentAsk, ARTIFACT_URL, errorMessage } from "@/lib/claude";
 import { BarChart } from "./charts";
 import { Markdown, Stat, StressBadge, Swatch, STRESS_VAR, fmt } from "./bits";
 
@@ -285,7 +285,7 @@ function RoofTeaser({ s }: { s: Scored }) {
 }
 
 function Brief({ s }: { s: Scored }) {
-  const { sample, ranked, weights, setHighlights, claude, aiShown, setAssistantOpen } = useStore();
+  const { sample, agentCode, ranked, weights, setHighlights, claude, aiShown, setAssistantOpen } = useStore();
   const [lang, setLang] = useState<Lang>("en");
   const key = `${s.v.id}|${lang}`;
   const [text, setText] = useState<string | null>(briefCache.get(key) ?? null);
@@ -301,6 +301,28 @@ function Brief({ s }: { s: Scored }) {
     abort.current?.abort();
     abort.current = new AbortController();
     setBusy(true); setError(null); setText(null); setStep("Reading the village data");
+    // The Kering agent (Managed Agent on the VPS) writes it; the in-page quick model only if the agent gives nothing.
+    if (agentCode) {
+      let out = "";
+      let failed: string | null = null;
+      try {
+        await agentAsk(agentCode, { question: briefAgentPrompt(s.v, lang), weights }, (l) => {
+          if (l.type === "step") setStep(l.text);
+          else if (l.type === "highlight") setHighlights({ ids: l.names.flatMap((n) => findVillages(n).slice(0, 1).map((v) => v.id)), reason: l.reason });
+          else if (l.type === "text") { out = l.text; setStep(null); setText(out); }
+          else if (l.type === "error") failed = l.message;
+        }, abort.current.signal);
+      } catch (e) {
+        failed = errorMessage(e);
+        if (failed === null) { setBusy(false); setStep(null); return; } // stopped by the user
+      }
+      if (out) {
+        briefCache.set(key, out); setText(out); if (failed) setError(failed);
+        setBusy(false); setStep(null);
+        return;
+      }
+      setStep("The Kering agent did not answer; using the quick model");
+    }
     try {
       const res = await sample(briefPrompt(s.v, lang), {
         tools: agentTools({ ranked, weights, highlight: (ids, reason) => setHighlights({ ids, reason }) }, setStep),

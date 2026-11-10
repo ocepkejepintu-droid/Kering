@@ -29,11 +29,12 @@ export function allowedCommand(cmd: unknown): boolean {
 export function stepLabel(cmd: string): string {
   const rest = cmd.trim().slice(PREFIX.length);
   const [op, ...args] = rest.split(" ");
-  const arg = args.filter((a) => !a.startsWith("--")).join(" ").replace(/["']/g, "").trim();
+  const flag = args.findIndex((a) => a.startsWith("--")); // the name is everything before the first --option
+  const arg = (flag < 0 ? args : args.slice(0, flag)).join(" ").replace(/["']/g, "").trim();
   switch (op) {
     case "village": return `Reading ${arg || "a village"}`;
     case "rank": return "Ranking villages";
-    case "rain": return `Simulating rain catch in ${arg.split(" --")[0] || "a village"}`;
+    case "rain": return `Simulating rain catch in ${arg || "a village"}`;
     case "recent_rain": return `Reading this year's rain for ${arg || "a village"}`;
     case "names": return "Listing village names";
     default: return "Reading the score weights";

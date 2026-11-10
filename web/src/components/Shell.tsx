@@ -119,9 +119,9 @@ export function ViewHeader({ title, subtitle, actions }: { title: string; subtit
       <LogoMark className="size-6 md:hidden" />
       <div className="min-w-0 flex-1">
         <h1 className="truncate text-base font-semibold tracking-tight">{title}</h1>
-        {subtitle && <p className="line-clamp-3 text-xs text-muted-foreground md:line-clamp-2">{subtitle}</p>}
+        {subtitle && <p className="line-clamp-1 text-xs text-muted-foreground md:line-clamp-2">{subtitle}</p>}
       </div>
-      <div className="flex flex-wrap items-center gap-2">
+      <div className="flex w-full flex-wrap items-center gap-2 sm:w-auto">
         {actions}
         {aiShown && <Button size="sm" className="md:hidden" onClick={() => setAssistantOpen(true)}><Sparkles />Ask</Button>}
       </div>
